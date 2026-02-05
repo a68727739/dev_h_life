@@ -40321,32 +40321,9 @@ footer h4{
   font-size: 1.2rem;
 }
 
-#form_text_member_name,
-#form_text_member_email,
-#form_text_member_password,
-#form_text_member_wallet_password,
-#form_number_member_mobile_phone,
-#form_text_place_of_residence_address,
-#form_text_member_contact_address,
-#form_text__member_logistics_address,
-#form_text_member_receive_good_name,
-#form_text_member_receive_good_phone,
-#form_text_member_receive_good_address,
-#form_text_member_referrer_id,
-#form_text_member_referrer_name,
-#form_text_member_arranger_id,
-#form_text_member_arranger_name,
-#form_text_member_branch_id,
-#form_text_member_branch_name,
-#form_text_member_bank_name,
-#form_text_member_bank_owner_name,
-#form_text_member_bank_owner_id,
-#form_select_member_product_level,
-#form_select_member_product_pack,
-#form_select_member_product_giveaway
-{
-  width: 15rem !important;
-}
+
+
+
 #form_text_place_of_residence_area_code,
 #form_number_member_logistics_area_code,
 #form_number_member_contact_area_code{
@@ -40379,6 +40356,12 @@ footer h4{
 .intro_info_block{
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
+}
+
+/* member_profile.html */
+.member_profile_btn{
+  background-color: #225679 !important;
+  border-color: #225679 !important;
 }
 /* 公用 */
 .red_color_text{
@@ -40465,4 +40448,58 @@ footer h4{
   .shop_side_bar_div{
     height: 41rem;
   }
+}
+
+/* 加入休斯 signup.html */
+#form_text_member_name,
+#form_text_member_email,
+#form_text_member_password,
+#form_text_member_wallet_password,
+#form_number_member_mobile_phone,
+#form_text_place_of_residence_address,
+#form_text_member_contact_address,
+#form_text__member_logistics_address,
+#form_text_member_receive_good_name,
+#form_text_member_receive_good_phone,
+#form_text_member_receive_good_address,
+#form_text_member_referrer_id,
+#form_text_member_referrer_name,
+#form_text_member_arranger_id,
+#form_text_member_arranger_name,
+#form_text_member_branch_id,
+#form_text_member_branch_name,
+#form_text_member_bank_name,
+#form_text_member_bank_owner_name,
+#form_text_member_bank_owner_id,
+#form_select_member_product_level,
+#form_select_member_product_pack,
+#form_select_member_product_giveaway,
+/* member_profile */
+#form_text_member_profile_email,
+#form_text_member_profile_mobile_phone,
+#form_text_member_profile_contact_phone_one,
+#form_text_member_profile_contact_phone_two
+{
+  width: 15rem !important;
+}
+
+
+/* member_profile */
+#form_text_member_profile_contact_address_area_code
+{
+  width: 4rem !important;
+}
+
+#form_text_member_profile_contact_address_district
+{
+  width: 8rem !important;
+}
+
+#form_text_member_profile_contact_address
+{
+  width: 15rem !important;
+}
+
+.memner_profile_button_area{
+  padding-top: 0rem !important;
 }

@@ -40369,9 +40369,16 @@ footer h4{
   background-color: #225679 !important;
   border-color: #225679 !important;
 }
-/* member_info */
+/* member_info.html */
 .pay_way_block{
   --bs-card-border-radius:1rem !important;
+}
+#intro_qr_img{
+  width: 80%;
+}
+.intro_info_block{
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
 }
 /* 公用 */
 .red_color_text{

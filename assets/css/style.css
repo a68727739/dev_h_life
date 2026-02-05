@@ -40363,6 +40363,18 @@ footer h4{
   background-color: #225679 !important;
   border-color: #225679 !important;
 }
+/* member_edit_password.html */
+.member_profile_btn_outline{
+  border-color: #225679 !important;
+  color: #225679 !important;
+}
+/* member_download.html */
+.memner_download_table th[scope=col]{
+  background-color: #225679 !important;
+  color:white;
+}
+
+
 /* 公用 */
 .red_color_text{
   color:red !important;

@@ -40365,7 +40365,7 @@ footer h4{
 }
 /* 公用 */
 .red_color_text{
-  color:red;
+  color:red !important;
 }
 .breadcrumb_under_divider{
   color: #225679 !important; 
@@ -40478,7 +40478,12 @@ footer h4{
 #form_text_member_profile_email,
 #form_text_member_profile_mobile_phone,
 #form_text_member_profile_contact_phone_one,
-#form_text_member_profile_contact_phone_two
+#form_text_member_profile_contact_phone_two,
+/*  */
+#form_text_member_old_password,
+#form_text_member_new_password,
+#form_text_member_new_password_confirm
+
 {
   width: 15rem !important;
 }

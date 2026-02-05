@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="夢想是對自己的承諾，實現夢想是休斯對您的承諾, 休斯國際生活事業有限公司">
+  <meta name="keywords"
+    content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="休斯國際生活">
+  <title>賦活新生系列</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+<body>
+  <!-- include 共用的 main_menu.html  -->
+ <div w3-include-html="main_menu.html"></div> 
+ <!-- /include 共用的 main_menu.html  -->
+
+     <!--  -->
+     <section class="wrapper bg-light">
+      <div class="container">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-12 order-lg-2 diy_brand_value_content_img">
+            <img class="w-auto" id="leader_top_wide" src="./assets/img/photos/hot_product_top_wide.png" srcset="./assets/img/photos/hot_product_top_wide.png" alt="">
+          </div>
+         
+        </div>
+        <!--/.row -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- / -->
+    <section class="wrapper bg-light">
+      <!-- <div class="container pb-14 pb-md-16 pt-12"> -->
+        <div class="container">
+        <div class="row gy-10">
+          <div class="col-lg-9 order-lg-2">
+            <div class="row align-items-center mb-10 position-relative zindex-1">
+              <div class="col-md-7 col-xl-8 pe-xl-20">
+                <h2 class="display-6 mb-1 hot_product_breadcrumb_ch">賦 活 新 生 系 列</h2>
+                <p class="mb-0 text-muted hot_product_breadcrumb_en">GET YOUNG PRODUCTS</p>
+              </div>
+              <!--/column -->
+             
+            </div>
+            <!--/.row -->
+            <div class="grid grid-view projects-masonry shop mb-13">
+              <div class="row gx-md-8 gy-10 gy-md-13 isotope">
+                <div class="project item col-md-6 col-xl-3">
+                  <figure class="rounded mb-6">
+                    <img src="./assets/img/photos/TW8-10001_NAD+活泉賦能飲.jpg" srcset="./assets/img/photos/TW8-10001_NAD+活泉賦能飲.jpg" alt="" />
+                    <a href="#" class="item-cart"><i class="uil uil-shopping-bag"></i> 加入購物車</a>
+                    
+                  </figure>
+                  <div class="post-header">
+                    
+                    <h2 class="post-title h4 fs-22 shop_post_title"><a href="./shop-product.html" class="link-dark">TW8-10001_NAD+<br>活泉賦能飲</a></h2>
+                    <p class="price price_text_p"><ins><span class="price_text">售價NT </span>&nbsp;&nbsp;<span class="amount">3,990</span></ins></p>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.item -->
+                <div class="project item col-md-6 col-xl-3">
+                  <figure class="rounded mb-6">
+                    <img src="./assets/img/photos/TW8-10002_GOT 代謝排護飲.jpg" srcset="./assets/img/photos/TW8-10002_GOT 代謝排護飲.jpg" alt="" />
+                    <a href="#" class="item-cart"><i class="uil uil-shopping-bag"></i> 加入購物車</a>
+                    
+                  </figure>
+                  <div class="post-header">
+                    
+                    <h2 class="post-title h4 fs-22 shop_post_title"><a href="./shop-product.html" class="link-dark">TW8-10002_GOT<br>代謝排護飲</a></h2>
+                    <p class="price price_text_p"><ins><span class="price_text">售價NT </span>&nbsp;&nbsp;<span class="amount">3,990</span></ins></p>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.item -->
+                <div class="project item col-md-6 col-xl-3">
+                  <figure class="rounded mb-6">
+                    <img src="./assets/img/photos/TW8-10003_AKK-593明星馭菌飲.jpg" srcset="./assets/img/photos/TW8-10003_AKK-593明星馭菌飲.jpg" alt="" />
+                    <a href="#" class="item-cart"><i class="uil uil-shopping-bag"></i> 加入購物車</a>
+                    
+                  </figure>
+                  <div class="post-header">
+                    
+                    <h2 class="post-title h4 fs-22 shop_post_title"><a href="./shop-product.html" class="link-dark">TW8-10003_AKK-593<br>明星馭菌飲</a></h2>
+                    <p class="price price_text_p"><ins><span class="price_text">售價NT </span>&nbsp;&nbsp;<span class="amount">3,990</span></ins></p>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.item -->
+                <div class="project item col-md-6 col-xl-3">
+                  <figure class="rounded mb-6">
+                    <img src="./assets/img/photos/TW8-10004_LUX-999花胎滋美飲.jpg" srcset="./assets/img/photos/TW8-10004_LUX-999花胎滋美飲.jpg" alt="" />
+                    <a href="#" class="item-cart"><i class="uil uil-shopping-bag"></i> 加入購物車</a>
+                    
+                  </figure>
+                  <div class="post-header">
+                    
+                    <h2 class="post-title h4 fs-22 shop_post_title"><a href="./shop-product.html" class="link-dark">TW8-10004_LUX-999<br>花胎滋美飲</a></h2>
+                    <p class="price price_text_p"><ins><span class="price_text">售價NT </span>&nbsp;&nbsp;<span class="amount">3,990</span></ins></p>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.item -->
+                
+               
+                
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.grid -->
+            <!-- 分頁 -->
+                <nav class="d-flex videos_pagination" aria-label="pagination">
+                  <ul class="pagination mb-0">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">上一頁</span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">下一頁</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pagination-last" href="#" aria-label="Next">
+                        <span aria-hidden="true">最後一頁</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- /.pagination -->
+                </nav>
+                <!-- /nav -->
+
+
+          </div>
+          <!-- /column -->
+          <aside class="col-lg-3 sidebar">
+            <div class="widget mt-1 shop_side_bar_div">
+              <h4 class="widget-title mb-3 product_class_text">商 品 分 類</h4>
+              <ul class="list-unstyled ps-0">
+                  <li><a href="#" class="link-body product_item_text">熱銷商品</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">H3入會套組</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">H2入會套組</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">H1入會套組</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">升級套組</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">賦活新生系列</a></li>
+                  <hr class="product_item_text_under_border" />
+                  <li><a href="#" class="link-body product_item_text">松鶴養生系列</a></li>
+              </ul>
+              
+            </div>
+            <!-- /.widget -->
+           
+          </aside>
+          <!-- /column .sidebar -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    
+  </div>
+ 
+    
+  
+    <!-- 熱銷商品區與footer間的區隔 -->
+    <section id="index_section_between_hot_product_and_footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
+            
+          
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+    </section>
+  
+    <!-- include 共用的 footer.html  -->
+    <div w3-include-html="footer.html"></div> 
+    <!-- /include 共用的 footer.html  -->
+    
+    <!-- include 共用的 login_pop.html  -->
+    <div w3-include-html="login_pop.html"></div> 
+    <!-- /include 共用的 login_pop.html  -->
+    
+    <!-- include 共用的 signup_pop.html  -->
+    <div w3-include-html="signup_pop.html"></div> 
+    <!-- /include 共用的 signup_pop.html  -->
+    
+  
+    <!-- 右側 浮動瀏覽進度球 -->
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- /右側 浮動瀏覽進度球 -->
+  
+    <!-- JS 引用區 -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!-- /JS 引用區 -->
+  
+    <!-- 呼叫 includeHTML()  -->
+    <script>
+      includeHTML();
+    </script>
+    <!-- /呼叫 includeHTML()  -->
+  
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="我們堅信，通過科學和創新可以改變健康管理的方式。休斯運用我們世界多國獨家專利的RenoSorb®後生元 發酵技術，提升有效成分的吸收效果，並將其高效融合在食品和飲品中。
+    安心是我們對您的承諾。我們嚴格把控每一個生產和檢測流程。確保產品符合國家標準。我們還提供完善的售後服務，讓您 在使用我們的產品時，能夠感受到無比的安心和放心。
+    ">
+  <meta name="keywords"
+    content="企業文化、、安心、安全、味王食品、值得信賴、最大的股東、六十五年的悠久歷史、傳承、品質、安全、堅持、嚴謹、專業、品牌價值、科學為基礎、誠信為原則
+    、生活為目標、安心為保障、健康意識的提升、科學創新的力量、承諾、安心、信任、保健品、新標準、專業、研發團隊、先進、實驗室、國際專利、美國、台灣、國家品質、認證
+    、核心價值、堅持、真實、可靠、健康、日常生活、融入、高品質生活、保持健康、安心為保障、嚴格把控、生產和檢測流程、符合國家標準、RenoSorb®後生元發酵技術、保健品">
+  <meta name="author" content="休斯國際生活">
+
+  <!-- 下面三個 meta 讓瀏覽器不要 cache 頁面 (強制使用最新圖片) -->
+  <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" /> -->
+
+  <title>結 帳</title>
+  <!-- <link rel="shortcut icon" href="./assets/img/favicon.png"> -->
+  <!-- DIY 改圖 -->
+  <link rel="shortcut icon" href="./assets/img/diy_favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v01">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+<body>
+  <!-- include 共用的 footer.html  -->
+  <div w3-include-html="main_menu.html"></div> 
+  <!-- /include 共用的 footer.html  -->
+  
+  <div class="content-wrapper">
+    <header class="wrapper bg-light">
+      
+      <!-- <div class="offcanvas offcanvas-end bg-light" id="offcanvas-cart" data-bs-scroll="true"> -->
+      <div class="offcanvas offcanvas-end bg-light" id="offcanvas-cart" data-bs-scroll="true">
+        <div class="offcanvas-header">
+          <h3 class="mb-0">您目前的購物車內容</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <div class="shopping-cart">
+            <div class="shopping-cart-item d-flex justify-content-between mb-4">
+              <div class="d-flex flex-row">
+                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth1.jpg" srcset="./assets/img/photos/sth1@2x.jpg 2x" alt="" /></a></figure>
+                <div class="w-100 ms-4">
+                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10001】H3入會套組1</a></h3>
+                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
+                  <div class="form-select-wrapper">
+                    <select class="form-select form-select-sm">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <!--/.form-select-wrapper -->
+                </div>
+              </div>
+              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
+            </div>
+            <!--/.shopping-cart-item -->
+            <div class="shopping-cart-item d-flex justify-content-between mb-4">
+              <div class="d-flex flex-row">
+                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth2.jpg" srcset="./assets/img/photos/sth2@2x.jpg 2x" alt="" /></a></figure>
+                <div class="w-100 ms-4">
+                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10002】H3入會套組2</a></h3>
+                  <p class="price fs-sm"><span class="amount">NT$ 118,800元</span></p>
+                  <div class="form-select-wrapper">
+                    <select class="form-select form-select-sm">
+                      <option value="1">1</option>
+                      <option value="2" selected>2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <!--/.form-select-wrapper -->
+                </div>
+              </div>
+              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
+            </div>
+            <!--/.shopping-cart-item -->
+            <div class="shopping-cart-item d-flex justify-content-between mb-4">
+              <div class="d-flex flex-row">
+                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth3.jpg" srcset="./assets/img/photos/sth3@2x.jpg 2x" alt="" /></a></figure>
+                <div class="w-100 ms-4">
+                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10004】H3入會套組4</a></h3>
+                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
+                  <div class="form-select-wrapper">
+                    <select class="form-select form-select-sm">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <!--/.form-select-wrapper -->
+                </div>
+              </div>
+              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
+            </div>
+            <!--/.shopping-cart-item -->
+
+            <div class="shopping-cart-item d-flex justify-content-between mb-4">
+              <div class="d-flex flex-row">
+                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth3.jpg" srcset="./assets/img/photos/sth3@2x.jpg 2x" alt="" /></a></figure>
+                <div class="w-100 ms-4">
+                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10005】H3入會套組5</a></h3>
+                  <p class="price fs-sm"><span class="amount">NT$ 178,200元</span></p>
+                  <div class="form-select-wrapper">
+                    <select class="form-select form-select-sm">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3" selected>3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <!--/.form-select-wrapper -->
+                </div>
+              </div>
+              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
+            </div>
+            <!--/.shopping-cart-item -->
+          </div>
+          <!-- /.shopping-cart-->
+          <div class="offcanvas-footer flex-column text-center">
+            <div class="d-flex w-100 justify-content-between mb-4">
+              <span>小 計:</span>
+              <span class="h6 mb-0">NT$ 415,800元</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-icon btn-icon-start rounded w-100 mb-4"><i class="uil uil-credit-card fs-18"></i> 結帳送出</a>
+            <p class="fs-14 mb-0">已超過免運標準</p>
+          </div>
+          <!-- /.offcanvas-footer-->
+        </div>
+        <!-- /.offcanvas-body -->
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+        <div class="container d-flex flex-row py-6">
+          <form class="search-form w-100">
+            <input id="search-form" type="text" class="form-control" placeholder="Type keyword and hit enter">
+          </form>
+          <!-- /.search-form -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.offcanvas -->
+    </header>
+    <!-- /header -->
+    
+    <section class="wrapper bg-light">
+      <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
+        <div class="row gx-md-8 gx-xl-12 gy-12">
+          <div class="col-lg-8">
+            <div class="alert alert-primary alert-icon mb-6" role="alert">
+              <i class="uil uil-exclamation-circle"></i> 已經是會員? <a href="#" data-bs-target="#modal-signin" data-bs-toggle="modal" data-bs-dismiss="modal" class="alert-link hover">登 入</a> 即可享受更快速的結帳體驗。
+            </div>
+            <h3 class="mb-4">收 貨 地 址</h3>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="firstName" placeholder="First name" value="" required>
+                    <label for="firstName" class="form-label">您的姓</label>
+                    <div class="invalid-feedback"> 必填欄位。</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required>
+                    <label for="lastName" class="form-label">您的名</label>
+                    <div class="invalid-feedback"> 必填欄位。 </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <label for="email" class="form-label">Email</label>
+                    <div class="invalid-feedback"> 請輸入有效的電子郵件地址以接收出貨更新資訊。 </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="address" placeholder="請輸入您的主要收貨地址" required>
+                    <label for="address" class="form-label"></label>
+                    <div class="invalid-feedback"> 請輸入您的主要收貨地址 </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    <label for="address2" class="form-label">次要收貨地址<span class="text-muted">(選填)</span></label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-select-wrapper">
+                    <select class="form-select" id="country" required>
+                      <option value="">國籍</option>
+                      <option>城市</option>
+                    </select>
+                    <div class="invalid-feedback"> 請輸入正確城市. </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-select-wrapper">
+                    <select class="form-select" id="state" required>
+                      <option value="">縣市</option>
+                      <option>台北市</option>
+                      <option>新北市</option>
+                    </select>
+                    <div class="invalid-feedback"> 請輸入正確縣市 </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
+                    <label for="zip" class="form-label">郵遞區號</label>
+                    <div class="invalid-feedback"> 必填 </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="mt-7 mb-6">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">收貨地址與我的帳單地址相同。</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">請儲存此資訊以備下次使用。</label>
+              </div>
+              <hr class="mt-7 mb-6">
+              <h3 class="mb-4">付款方式</h3>
+              <div class="mt-3 mb-6">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">信用卡</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">簽帳金融卡</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="row gy-3 gx-3">
+                    <div class="col-md-12">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="cc-number" placeholder="Credit card number" required>
+                        <label for="cc-number" class="form-label">信用卡號碼</label>
+                        <div class="invalid-feedback"> 必填 </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="cc-name" placeholder="Name on card" required>
+                        <label for="cc-name" class="form-label">持卡人全名</label>
+                        <div class="invalid-feedback"> 必填 </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="Expiration" required>
+                        <label for="cc-expiration" class="form-label">過期日</label>
+                        <div class="invalid-feedback"> 必填 </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="背面安全碼" required>
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <div class="invalid-feedback"> 必填 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /column -->
+          <div class="col-lg-4">
+            <h3 class="mb-4">訂 單 內 容</h3>
+            <div class="shopping-cart mb-7">
+              <div class="shopping-cart-item d-flex justify-content-between mb-4">
+                <div class="d-flex flex-row d-flex align-items-center">
+                  <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/hot_TH3_10001.jpg" srcset="./assets/img/photos/hot_TH3_10001.jpg" alt="" /></a></figure>
+                  <div class="w-100 ms-4">
+                    <h3 class="post-title h6 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10001】H3入會套組1</a></h3>
+                    <small>&nbsp;</small>
+                    <small>&nbsp;</small>
+                  </div>
+                </div>
+                <div class="ms-2 d-flex align-items-center">
+                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
+                </div>
+              </div>
+              <!--/.shopping-cart-item -->
+              <div class="shopping-cart-item d-flex justify-content-between mb-4">
+                <div class="d-flex flex-row d-flex align-items-center">
+                  <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/hot_TH3_10002.jpg" srcset="./assets/img/photos/hot_TH3_10002.jpg" alt="" /></a></figure>
+                  <div class="w-100 ms-4">
+                    <h3 class="post-title h6 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10002】H3入會套組2</a></h3>
+                    <small>&nbsp;</small>
+                    <small>&nbsp;</small>
+                  </div>
+                </div>
+                <div class="ms-2 d-flex align-items-center">
+                  <p class="price fs-sm"><span class="amount">NT$ 118,800元</span></p>
+                </div>
+              </div>
+              <!--/.shopping-cart-item -->
+              <div class="shopping-cart-item d-flex justify-content-between mb-4">
+                <div class="d-flex flex-row d-flex align-items-center">
+                  <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/hot_TH3_10001.jpg" srcset="./assets/img/photos/hot_TH3_10001.jpg" alt="" /></a></figure>
+                  <div class="w-100 ms-4">
+                    <h3 class="post-title h6 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10004】H3入會套組4</a></h3>
+                    <small>&nbsp;</small>
+                  </div>
+                </div>
+                <div class="ms-2 d-flex align-items-center">
+                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
+                </div>
+              </div>
+              <!--/.shopping-cart-item -->
+              <div class="shopping-cart-item d-flex justify-content-between mb-4">
+                <div class="d-flex flex-row d-flex align-items-center">
+                  <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/hot_TH3_10005.jpg" srcset="./assets/img/photos/hot_TH3_10005.jpg" alt="" /></a></figure>
+                  <div class="w-100 ms-4">
+                    <h3 class="post-title h6 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10005】H3入會套組5</a></h3>
+                    <small>&nbsp;</small>
+                  </div>
+                </div>
+                <div class="ms-2 d-flex align-items-center">
+                  <p class="price fs-sm"><span class="amount">NT$ 178,200元</span></p>
+                </div>
+              </div>
+              <!--/.shopping-cart-item -->
+            </div>
+            <!-- /.shopping-cart-->
+            <hr class="my-4">
+            <h3 class="mb-2">物 流</h3>
+            <div class="mb-5">
+              <div class="form-check mb-2">
+                <input id="standart" name="shippingMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="standart">免費 - 一般物流</label>
+                <small class="text-muted d-block">Shipment may take 5-6 business days</small>
+              </div>
+              <div class="form-check">
+                <input id="express" name="shippingMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="express">NT$ 100元 快速物流</label>
+                <small class="text-muted d-block">運送時間約 2-3 工作天</small>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-order">
+                <tbody>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">小 計</strong></td>
+                    <td class="pe-0 text-end">
+                      <p class="price">NT$ 415,800元</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">折 扣 (5%)</strong></td>
+                    <td class="pe-0 text-end">
+                      <p class="price text-red">-NT$ 20,790元</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">運 費</strong></td>
+                    <td class="pe-0 text-end">
+                      <p class="price">NT$ 200元</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ps-0"><strong class="text-dark">總 費 用</strong></td>
+                    <td class="pe-0 text-end">
+                      <p class="price text-dark fw-bold">NT$ 395,210元</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="#" class="btn btn-primary rounded w-100 mt-4">確 認 結 帳</a>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="modal fade" id="modal-signin" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content text-center">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h2 class="mb-3 text-start">歡 迎 回 來</h2>
+            <p class="lead mb-6 text-start">請輸入 帳號 與 密碼 登入.</p>
+            <form class="text-start mb-3">
+              <div class="form-floating mb-4">
+                <input type="email" class="form-control" placeholder="Email" id="loginEmail">
+                <label for="loginEmail">帳號</label>
+              </div>
+              <div class="form-floating password-field mb-4">
+                <input type="password" class="form-control" placeholder="Password" id="loginPassword">
+                <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                <label for="loginPassword">密 碼</label>
+              </div>
+              <a class="btn btn-primary rounded-pill btn-login w-100 mb-2">登入</a>
+            </form>
+            <!-- /form -->
+            <p class="mb-1"><a href="#" class="hover">忘記密碼?</a></p>
+            <p class="mb-0">還不是會員? <a href="#" data-bs-target="#modal-signup" data-bs-toggle="modal" data-bs-dismiss="modal" class="hover">Sign up</a></p>
+            <div class="divider-icon my-4">或</div>
+            <nav class="nav social justify-content-center text-center">
+              <a href="#" class="btn btn-circle btn-sm btn-google"><i class="uil uil-google"></i></a>
+              <a href="#" class="btn btn-circle btn-sm btn-facebook-f"><i class="uil uil-facebook-f"></i></a>
+              <a href="#" class="btn btn-circle btn-sm btn-twitter"><i class="uil uil-twitter"></i></a>
+            </nav>
+            <!--/.social -->
+          </div>
+          <!--/.modal-content -->
+        </div>
+        <!--/.modal-body -->
+      </div>
+      <!--/.modal-dialog -->
+    </div>
+    <!--/.modal -->
+    <div class="modal fade" id="modal-signup" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content text-center">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h2 class="mb-3 text-start">註冊成為休斯國際會員</h2>
+            <p class="lead mb-6 text-start">註冊成為會員</p>
+            <form class="text-start mb-3">
+              <div class="form-floating mb-4">
+                <input type="text" class="form-control" placeholder="Name" id="loginName">
+                <label for="loginName">帳 號</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input type="email" class="form-control" placeholder="Email" id="loginEmail">
+                <label for="loginEmail">Email</label>
+              </div>
+              <div class="form-floating password-field mb-4">
+                <input type="password" class="form-control" placeholder="Password" id="loginPassword">
+                <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                <label for="loginPassword">密 碼</label>
+              </div>
+              <div class="form-floating password-field mb-4">
+                <input type="password" class="form-control" placeholder="Confirm Password" id="loginPasswordConfirm">
+                <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                <label for="loginPasswordConfirm">確認密碼</label>
+              </div>
+              <a class="btn btn-primary rounded-pill btn-login w-100 mb-2">Sign Up</a>
+            </form>
+            <!-- /form -->
+            <p class="mb-0">已經是會員? <a href="#" data-bs-target="#modal-signin" data-bs-toggle="modal" data-bs-dismiss="modal" class="hover">登入會員
+              帳號</a></p>
+            <div class="divider-icon my-4">或</div>
+            <nav class="nav social justify-content-center text-center">
+              <a href="#" class="btn btn-circle btn-sm btn-google"><i class="uil uil-google"></i></a>
+              <a href="#" class="btn btn-circle btn-sm btn-facebook-f"><i class="uil uil-facebook-f"></i></a>
+              <a href="#" class="btn btn-circle btn-sm btn-twitter"><i class="uil uil-twitter"></i></a>
+            </nav>
+            <!--/.social -->
+          </div>
+          <!--/.modal-content -->
+        </div>
+        <!--/.modal-body -->
+      </div>
+      <!--/.modal-dialog -->
+    </div>
+    <!--/.modal -->
+  
+  </div>
+  <!-- /.content-wrapper -->
+  
+
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <!-- /include 共用的 footer.html  -->
+  
+  <!-- include 共用的 login_pop.html  -->
+  <div w3-include-html="login_pop.html"></div> 
+  <!-- /include 共用的 login_pop.html  -->
+  
+  <!-- include 共用的 signup_pop.html  -->
+  <div w3-include-html="signup_pop.html"></div> 
+  <!-- /include 共用的 signup_pop.html  -->
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+   <!-- JS 引用區 -->
+   <script src="./assets/js/plugins.js"></script>
+   <script src="./assets/js/theme.js"></script>
+   <script src="./assets/js/custom.js"></script>
+   <!-- /JS 引用區 -->
+ 
+   <!-- 呼叫 includeHTML()  -->
+   <script>
+     includeHTML();
+   </script>
+   <!-- /呼叫 includeHTML()  -->
+</body>
+
+</html>

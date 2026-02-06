@@ -40381,7 +40381,30 @@ footer h4{
 .member_forget_password_button_div{
   float: right;
 }
+/* member_histtory_order.html */
+.memner_download_table th[scope=col]{
+  background-color: #225679 !important;
+  color:white;
+}
 
+/* member_histtory_order.html */
+/* 歷史訂單 history表格 */
+.memner_history_order_table th[scope=col]{
+  background-color: #225679 !important;
+  color:white;
+}
+
+.memner_history_order_table_div{
+  width: 200% !important ;
+}
+@media (max-width:768px){
+  .memner_history_order_table_div{
+    width: 4rem !important ;
+  }
+  table td, table th {
+    font-size: 0.5rem !important;
+  }
+}
 
 /* 公用 */
 .mb_form_text_01{
@@ -40597,3 +40620,6 @@ footer h4{
 .nav_block table td, table th {
   font-size: 1rem !important;
 }
+
+
+

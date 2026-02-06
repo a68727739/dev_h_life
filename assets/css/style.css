@@ -40385,6 +40385,14 @@ footer h4{
 .memner_download_table th[scope=col]{
   background-color: #225679 !important;
   color:white;
+  padding: 0.3rem !important;
+}
+@media (max-width:768px){
+  .memner_download_table th[scope=col]{
+    background-color: #225679 !important;
+    color:white;
+    padding: 1rem !important;
+  }
 }
 
 /* member_histtory_order.html */
@@ -40392,10 +40400,12 @@ footer h4{
 .memner_history_order_table th[scope=col]{
   background-color: #225679 !important;
   color:white;
+  padding: 0.3rem !important;
 }
 
 .memner_history_order_table_div{
   width: 200% !important ;
+  font-size: 1rem !important;
 }
 @media (max-width:768px){
   .memner_history_order_table_div{

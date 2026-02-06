@@ -40520,3 +40520,34 @@ footer h4{
 .memner_profile_button_area{
   padding-top: 0rem !important;
 }
+
+/* 底部分頁小橫條 */
+/* 當前選中的分頁藍底白字 */
+.memner_download_table th[scope=col]{
+  background-color: #225679 !important;
+  color:white;
+}
+
+.page-link.active, .active>.page_item_now
+{
+  background-color: #225679 !important;
+  color: white !important;
+}
+
+.page_block_ul .page-link{
+  border-color: #225679 !important;
+}
+
+
+.pagination{
+  --bs-pagination-disabled-color: #225679 !important;
+}
+/* 直接把原本預設的改掉 */
+.page-link{
+  color: #225679 !important;
+  font-weight: 500 !important;
+}
+
+.nav_block table td, table th {
+  font-size: 1rem !important;
+}

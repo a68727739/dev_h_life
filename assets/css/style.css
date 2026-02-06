@@ -40290,11 +40290,7 @@ footer h4{
 }
 
 
-.mb_form_text_01{
-  color: #225679 !important;
-  font-size: 1.5rem;
-  font-weight:350;
-}
+
 
 .mb_form_text_red_01{
   color: red !important;
@@ -40374,8 +40370,29 @@ footer h4{
   color:white;
 }
 
+/* member_login */
+.login_page_img_right_block{
+  width: 100% !important;
+  padding: 0rem !important;
+}
+.radio_button_from_wallet_div{
+  float: right;
+}
+
 
 /* 公用 */
+.mb_form_text_01{
+  color: #225679 !important;
+  font-size: 1.5rem;
+  font-weight:350;
+}
+
+.mb_form_text_02{
+  color: #225679 !important;
+  font-size: 1rem;
+  font-weight:350;
+}
+
 .red_color_text{
   color:red !important;
 }
@@ -40398,6 +40415,9 @@ footer h4{
   padding-left: 0rem;
   width: 100%;
 }
+
+
+
 
 .breadcrumb_under_divider_thin_white{
   border-color: white !important;  
@@ -40516,8 +40536,9 @@ footer h4{
 /*  */
 #form_text_member_old_password,
 #form_text_member_new_password,
-#form_text_member_new_password_confirm
-
+#form_text_member_new_password_confirm,
+/* member_forget_password */
+#form_text_member_login_account
 {
   width: 15rem !important;
 }

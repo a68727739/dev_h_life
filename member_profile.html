@@ -57,157 +57,134 @@
  <div class="container">
   
   <div class="row">
-    <!-- 左側選單 -->
-    <aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block mb_left_menu_block">
-      <div class="widget pb-3">
-        <h1 class="widget-title fs-35 mb-2 mb_left_menu_item_title">會員資訊</h6>
-        <nav id="collapse-usage">
-          <ul class="list-unstyled fs-sm lh-sm text-reset">
-            <li><a class="mb_left_menu_item" href="./index.html">會員資訊</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">個人資料</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">修訂密碼</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">我的訂單</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">組織查詢</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">週獎金查詢</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">電子錢包資料</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">下載專區</a></li>
-            <hr class="mb_left_menu_item_under_border" />
-            <li><a class="mb_left_menu_item" href="./index.html">登出</a></li>
-          
-          </ul>
-        </nav>
-        <!-- /nav -->
+    <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+      <!-- include 共用的 main_menu.html  -->
+      <div class="row mb_member_menu_bg ">
+        <div w3-include-html="member_left_menu_block.html" class=""></div> 
       </div>
-      <!-- /.widget -->
-    </aside>
-    <!-- /左側選單區 -->
-    
-    <div class="col-xl-10 order-xl-2 signup_form_area">
-      
-          <br>
-          <div class="col-md-12 col-xl-12 pe-xl-20">
-            <h2 class="display-12 mb-12 breadcrumb_title">會 員 資 訊</h2>
-            <!-- Simple -->
-            <hr class="my-8 breadcrumb_under_divider_thin" />
-          </div>
-          <br>   
-
-          <div class="mb_form_text_title_02 breadcrumb_under_divider">基本資料</div>
-            <br>
-            <div class="card shadow-none bg-soft-blue">
-              <div class="card-body">
-                <span class="mb_form_text_01">會員編號 : TW000000</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">姓名 : 王曉明</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">證件證號/護照號碼 : A100123456</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">出生日期(西元) : 1987/06/01</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">性別 : 男</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">電子郵件 : </span>
-                  <input name="member_profile_email" id="form_text_member_profile_email" type="text" class="form-control mb_left_menu_form_element" placeholder="alen11223@gmail.com" disabled>
-                
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-              
-                <span class="mb_form_text_01">行動電話 : </span>
-                  <input name="member_profile_mobile_phone" id="form_text_member_profile_mobile_phone" type="text" class="form-control mb_left_menu_form_element" placeholder="0912345678" disabled>
-                
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                
-                <span class="mb_form_text_01">聯絡電話1 : </span>
-                  <input name="member_profile_contact_phone_one" id="form_text_member_profile_contact_phone_one" type="text" class="form-control mb_left_menu_form_element" placeholder="02-1234-5678" disabled>
-                
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                
-                <span class="mb_form_text_01">聯絡電話2 : </span>
-                <input name="member_profile_contact_phone_one" id="form_text_member_profile_contact_phone_two" type="text" class="form-control mb_left_menu_form_element" placeholder="02-9876-5432" disabled>
-                
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-
-                <span class="mb_form_text_01">通訊地址 : </span>
-                <input name="member_profile_contact_address_area_code" id="form_text_member_profile_contact_address_area_code" type="text" class="form-control mb_left_menu_form_element" placeholder="105" disabled>
-                <input name="member_profile_contact_address_district" id="form_text_member_profile_contact_address_district" type="text" class="form-control mb_left_menu_form_element" placeholder="台北市松山區" disabled>
-                <input name="member_profile_contact_address" id="form_text_member_profile_contact_address" type="text" class="form-control mb_left_menu_form_element" placeholder="光復南路1號5F-1" disabled>
-                
-              </div>
-            </div>
-
-            <br>
-            <div class="mb_form_text_title_02 breadcrumb_under_divider">銀行資料</div>
-            <br>
-            <div class="card shadow-none bg-soft-blue">
-              <div class="card-body">
-                <span class="mb_form_text_01">銀行代碼 : 0130165</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">銀行名稱 : 國泰世華光復分行</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">銀行帳號 : 123456789101</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">開戶人姓名 : 王曉明</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">開戶人證號 : 12345678</span>
-                
-              </div>
-            </div>
-            <br>
-            <div class="mb_form_text_title_02 breadcrumb_under_divider">推薦人</div>
-            <br>
-            <div class="card shadow-none bg-soft-blue">
-              <div class="card-body">
-                <span class="mb_form_text_01">推薦人編號 : TW987654</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">推薦人姓名 : 李小華</span>
-              </div>
-            </div>
-            <br>
-            <div class="mb_form_text_title_02 breadcrumb_under_divider">安置人</div>
-            <br>
-            <div class="card shadow-none bg-soft-blue">
-              <div class="card-body">
-                <span class="mb_form_text_01">安置人編號 : TW654987</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">安置人姓名 : 蔡小美</span>
-                <hr class="my-8 breadcrumb_under_divider_thin_white" />
-                <span class="mb_form_text_01">安置人 : 蔡小美</span>
-               
-              </div>
-            </div>
-            <br>
-          
-            <section class="wrapper">
-              <div class="container py-14 py-md-16 memner_profile_button_area">
-                
-                <div class="row gx-md-8 gx-xl-12 gy-10">
-                  <div class="col-lg-6 mx-auto">
-                     <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">返 回</a>
-                  </div>
-                  <!--/column -->
-                  <div class="col-lg-6 mx-auto">
-                    <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">確認送出</a>
-                  </div>
-                  <!--/column -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.container -->
-            </section>
-            <!-- /section -->
-            
-      </div>
-      <br>
-      <br>
-  
+      <!-- /include 共用的 main_menu.html  -->
     </div>
     
+    <div class="col-xl-8 order-xl-2">
+      <div class="col-xl-10 order-xl-2 signup_form_area">
+        
+            <br>
+            <div class="col-md-12 col-xl-12 pe-xl-20">
+              <h2 class="display-12 mb-12 breadcrumb_title">會 員 資 訊</h2>
+              <!-- Simple -->
+              <hr class="my-8 breadcrumb_under_divider_thin" />
+            </div>
+            <br>   
+
+            <div class="mb_form_text_title_02 breadcrumb_under_divider">基本資料</div>
+              <br>
+              <div class="card shadow-none bg-soft-blue">
+                <div class="card-body">
+                  <span class="mb_form_text_01">會員編號 : TW000000</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">姓名 : 王曉明</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">證件證號/護照號碼 : A100123456</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">出生日期(西元) : 1987/06/01</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">性別 : 男</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">電子郵件 : </span>
+                    <input name="member_profile_email" id="form_text_member_profile_email" type="text" class="form-control mb_left_menu_form_element" placeholder="alen11223@gmail.com" disabled>
+                  
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                
+                  <span class="mb_form_text_01">行動電話 : </span>
+                    <input name="member_profile_mobile_phone" id="form_text_member_profile_mobile_phone" type="text" class="form-control mb_left_menu_form_element" placeholder="0912345678" disabled>
+                  
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  
+                  <span class="mb_form_text_01">聯絡電話1 : </span>
+                    <input name="member_profile_contact_phone_one" id="form_text_member_profile_contact_phone_one" type="text" class="form-control mb_left_menu_form_element" placeholder="02-1234-5678" disabled>
+                  
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  
+                  <span class="mb_form_text_01">聯絡電話2 : </span>
+                  <input name="member_profile_contact_phone_one" id="form_text_member_profile_contact_phone_two" type="text" class="form-control mb_left_menu_form_element" placeholder="02-9876-5432" disabled>
+                  
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+
+                  <span class="mb_form_text_01">通訊地址 : </span>
+                  <input name="member_profile_contact_address_area_code" id="form_text_member_profile_contact_address_area_code" type="text" class="form-control mb_left_menu_form_element" placeholder="105" disabled>
+                  <input name="member_profile_contact_address_district" id="form_text_member_profile_contact_address_district" type="text" class="form-control mb_left_menu_form_element" placeholder="台北市松山區" disabled>
+                  <input name="member_profile_contact_address" id="form_text_member_profile_contact_address" type="text" class="form-control mb_left_menu_form_element" placeholder="光復南路1號5F-1" disabled>
+                  
+                </div>
+              </div>
+
+              <br>
+              <div class="mb_form_text_title_02 breadcrumb_under_divider">銀行資料</div>
+              <br>
+              <div class="card shadow-none bg-soft-blue">
+                <div class="card-body">
+                  <span class="mb_form_text_01">銀行代碼 : 0130165</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">銀行名稱 : 國泰世華光復分行</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">銀行帳號 : 123456789101</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">開戶人姓名 : 王曉明</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">開戶人證號 : 12345678</span>
+                  
+                </div>
+              </div>
+              <br>
+              <div class="mb_form_text_title_02 breadcrumb_under_divider">推薦人</div>
+              <br>
+              <div class="card shadow-none bg-soft-blue">
+                <div class="card-body">
+                  <span class="mb_form_text_01">推薦人編號 : TW987654</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">推薦人姓名 : 李小華</span>
+                </div>
+              </div>
+              <br>
+              <div class="mb_form_text_title_02 breadcrumb_under_divider">安置人</div>
+              <br>
+              <div class="card shadow-none bg-soft-blue">
+                <div class="card-body">
+                  <span class="mb_form_text_01">安置人編號 : TW654987</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">安置人姓名 : 蔡小美</span>
+                  <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  <span class="mb_form_text_01">安置人 : 蔡小美</span>
+                
+                </div>
+              </div>
+              <br>
+            
+              <section class="wrapper">
+                <div class="container py-14 py-md-16 memner_profile_button_area">
+                  
+                  <div class="row gx-md-8 gx-xl-12 gy-10">
+                    <div class="col-lg-6 mx-auto">
+                      <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">返 回</a>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6 mx-auto">
+                      <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">確認送出</a>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.container -->
+              </section>
+              <!-- /section -->
+              
+        </div>
+        <br>
+        <br>
+    
+      </div>
+    </div>
     <!-- /column -->
   </div>
   <!-- /.row -->

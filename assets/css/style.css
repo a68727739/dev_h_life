@@ -40428,11 +40428,23 @@ footer h4{
 .pagination-last{
   width: 3rem !important;
 }
-
+/* 主選單 (頂端水平)*/
 .mb_main_menu_bg{
   background-color: #d9d9e0;
   min-height: 7rem;
 }
+
+/* 會員選單 (左側垂直)*/
+.mb_member_menu_bg_div{
+  width: 20%;
+}
+.mb_member_menu_bg{
+
+  
+  /* min-height: 7rem; */
+}
+
+
 @media (max-width:768px){
   .mb_main_menu_bg{
     background-color: #d9d9e0;
@@ -40441,6 +40453,16 @@ footer h4{
 }
 .mb_left_menu_block{
   padding-top: 2rem !important;
+  width: 100%;
+}
+
+
+@media (max-width:768px){
+  .mb_left_menu_block{
+    padding-top: 2rem !important;
+    width: 100%;
+   
+  }  
 }
 
 .mb_left_menu_form_element{

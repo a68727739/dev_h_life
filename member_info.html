@@ -57,91 +57,68 @@
  <div class="container">
   
   <div class="row">
-    <!-- 左側選單 -->
-<aside class="col-xl-2 sidebar doc-sidebar mt-md-0 py-16 d-none d-xl-block mb_left_menu_block">
-  <div class="widget pb-3">
-    <h1 class="widget-title fs-35 mb-2 mb_left_menu_item_title">會員資訊</h6>
-    <nav id="collapse-usage">
-      <ul class="list-unstyled fs-sm lh-sm text-reset">
-        <li><a class="mb_left_menu_item" href="./index.html">會員資訊</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">個人資料</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">修訂密碼</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">我的訂單</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">組織查詢</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">週獎金查詢</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">電子錢包資料</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">下載專區</a></li>
-        <hr class="mb_left_menu_item_under_border" />
-        <li><a class="mb_left_menu_item" href="./index.html">登出</a></li>
-      
-      </ul>
-    </nav>
-    <!-- /nav -->
-  </div>
-  <!-- /.widget -->
-</aside>
-<!-- /左側選單區 -->
-    
-    <div class="col-xl-10 order-xl-2 signup_form_area">
-      
-          <br>
-          <div class="col-md-12 col-xl-12 pe-xl-20">
-            <h2 class="display-12 mb-12 breadcrumb_title">會 員 資 訊</h2>
-            <!-- Simple -->
-            <hr class="my-8 breadcrumb_under_divider_thin" />
-          </div>
-          <br>   
-
-        <div class="card shadow-none bg-soft-blue">
-          <div class="card-body">
-            <span class="mb_form_text_01">會員編號 : TW000000</span>
-            <hr class="my-8 breadcrumb_under_divider_thin_white" />
-            <span class="mb_form_text_01">入會級別 : H3</span>
-            <hr class="my-8 breadcrumb_under_divider_thin_white" />
-            <span class="mb_form_text_01">重消合格到期日 : 2026/12/31</span>
-            <hr class="my-8 breadcrumb_under_divider_thin_white" />
-            <span class="mb_form_text_01">會籍有效日期 : 2026/12/31</span>
-          </div>
-        </div>
-        <br>
-        <div class="card shadow-none bg-soft-blue">
-          <div class="card-body">
-          
-              <div class="container py-14 py-md-16 intro_info_block">
-                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-                  <div class="col-md-4 col-lg-4 col-xl-4 order-lg-1 position-relative">
-                    <figure class="rounded"><img id="intro_qr_img" src="./assets/img/photos/demo_intro_qr.png" srcset="./assets/img/photos/demo_intro_qr.png" alt=""></figure>
-                  </div>
-                  <!--/column -->
-                  <div class="col-lg-8 order-lg-2">
-                    <span class="mb_form_text_01">推薦連結</span>
-                    <p class="lead fs-lg"> https://hugheslifescience.com/share.php?intro=TW215423</p>
-                  </div>
-                  <!--/column -->
-                </div>
-                <!--/.row -->
-              </div>
-
-          </div>
-        </div>
-
-        <a href=""><span class="mb_form_text_01">查看我的歷史訂單</span></a>
-        <br>
-        <a href=""><span class="mb_form_text_01">查看我的獎金</span></a>
+    <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+      <!-- include 共用的 main_menu.html  -->
+      <div class="row mb_member_menu_bg ">
+        <div w3-include-html="member_left_menu_block.html" class=""></div> 
       </div>
-      <br>
-      <br>
-  
+      <!-- /include 共用的 main_menu.html  -->
     </div>
     
-    <!-- /column -->
+    <div class="col-xl-8 order-xl-2">
+      <div class="col-xl-10 order-xl-2 signup_form_area">
+            <br>
+            <div class="col-md-12 col-xl-12 pe-xl-20">
+              <h2 class="display-12 mb-12 breadcrumb_title">會 員 資 訊</h2>
+              <!-- Simple -->
+              <hr class="my-8 breadcrumb_under_divider_thin" />
+            </div>
+            <br>   
+
+          <div class="card shadow-none bg-soft-blue">
+            <div class="card-body">
+              <span class="mb_form_text_01">會員編號 : TW000000</span>
+              <hr class="my-8 breadcrumb_under_divider_thin_white" />
+              <span class="mb_form_text_01">入會級別 : H3</span>
+              <hr class="my-8 breadcrumb_under_divider_thin_white" />
+              <span class="mb_form_text_01">重消合格到期日 : 2026/12/31</span>
+              <hr class="my-8 breadcrumb_under_divider_thin_white" />
+              <span class="mb_form_text_01">會籍有效日期 : 2026/12/31</span>
+            </div>
+          </div>
+          <br>
+          <div class="card shadow-none bg-soft-blue">
+            <div class="card-body">
+            
+                <div class="container py-14 py-md-16 intro_info_block">
+                  <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-md-4 col-lg-4 col-xl-4 order-lg-1 position-relative">
+                      <figure class="rounded"><img id="intro_qr_img" src="./assets/img/photos/demo_intro_qr.png" srcset="./assets/img/photos/demo_intro_qr.png" alt=""></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-8 order-lg-2">
+                      <span class="mb_form_text_01">推薦連結</span>
+                      <p class="lead fs-lg"> https://hugheslifescience.com/share.php?intro=TW215423</p>
+                    </div>
+                    <!--/column -->
+                  </div>
+                  <!--/.row -->
+                </div>
+
+            </div>
+          </div>
+
+          <a href=""><span class="mb_form_text_01">查看我的歷史訂單</span></a>
+          <br>
+          <a href=""><span class="mb_form_text_01">查看我的獎金</span></a>
+        </div>
+        <br>
+        <br>
+    
+      </div>
+      
+      <!-- /column -->
+    </div>
   </div>
   <!-- /.row -->
 </div>

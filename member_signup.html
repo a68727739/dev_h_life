@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="夢想是對自己的承諾，實現夢想是休斯對您的承諾, 休斯國際生活事業有限公司">
+  <meta name="keywords"
+    content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="休斯國際生活">
+  <title>登入</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+<body>
+
+ <!-- include 共用的 main_menu.html  -->
+ <div class="row mb_main_menu_bg ">
+  <div w3-include-html="main_menu.html" class=""></div> 
+ </div>
+ <!-- /include 共用的 main_menu.html  -->
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+        <!-- include 共用的 main_menu.html  -->
+        <div class="row mb_member_menu_bg ">
+          <div w3-include-html="member_left_menu_block.html" class=""></div> 
+        </div>
+        <!-- /include 共用的 main_menu.html  -->
+    </div>
+
+    <div class="col-xl-8 order-xl-2">
+      <div class="col-xl-10 order-xl-2 signup_form_area">
+        <form class="contact-form needs-validation" method="post" action="./xxx.php" novalidate>
+            <br>
+            <div class="col-md-12 col-xl-12 pe-xl-20">
+              <h2 class="display-12 mb-12 breadcrumb_title">加 入 休 斯</h2>
+              <!-- Simple -->
+              <hr class="my-8 breadcrumb_under_divider_thin" />
+            </div>
+  
+            <br>
+        <!-- 個人資料 -->
+            <div class="mb_form_text_title_02 breadcrumb_under_divider">個人資料<span class="mb_form_text_red_01">(如已經有會員資料，請直接登入)</span></div>
+            
+            <!-- 國別 -->
+            <span class="mb_form_text_01">國別<span class="red_color_text">*</span></span>
+            <div class="form-select-wrapper display_inline_block">
+              <select name="member_nation" id="form_select_member_nation" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option selected>請選擇</option>
+                <option value="1">台灣</option>
+                <option value="2">中國</option>
+                <option value="3">其他</option>
+              </select>
+            </div>
+            <!-- /國別 -->
+            <br>
+            <!-- 姓名 -->
+            <span class="mb_form_text_01">姓名<span class="red_color_text">*</span> : </span>
+            <input name="member_name" id="form_text_member_name" type="text" class="form-control mb_left_menu_form_element" placeholder="請填寫真實姓名">
+            <!-- /姓名 -->
+            <br>
+            <!-- 會員身分 -->
+            <div class="display_inline_block"><span class="mb_form_text_01">會員身分<span class="red_color_text">*</span> : </span></div>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="member_type" id="form_radio_member_type_person_local" class="form-check-input mb_left_menu_form_element" type="radio" checked>
+              <label class="form-check-label form_radio_font_size" for=""> 本國個人 </label>
+            </div>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="member_type" id="form_radio_member_type_person_legal"  class="form-check-input mb_left_menu_form_element" type="radio">
+              <label class="form-check-label form_radio_font_size" for=""> 本國法人 </label>
+            </div>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="member_type" id="form_radio_member_type_person_foreign_or_local" class="form-check-input mb_left_menu_form_element" type="radio">
+              <label class="form-check-label form_radio_font_size" for=""> 外國個人或法人 </label>
+            </div>
+            <!-- /會員身分 -->
+            <br>
+            <!-- 身分證與出生年月 -->
+            <span class="mb_form_text_01">身分證字號/統一編號* : </span>
+            <input name="member_person_id" id="form_text_member_person_id" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">生日<span class="red_color_text">*</span> : </span>
+            <div class="form-select-wrapper display_inline_block">
+              <select name="member_birth_year" id="form_select_member_birth_year" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                  <option selected>年</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select>
+            </div>
+            <div class="form-select-wrapper display_inline_block">
+              <select name="member_birth_month" id="form_select_member_birth_month" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option selected>月</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="form-select-wrapper display_inline_block">
+              <select name="member_birth_day" id="form_select_member_birth_day" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option selected>日</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <!-- /身分證與出生年月 -->
+            <br>
+            <!-- 性別 -->
+            <div class="display_inline_block"><span class="mb_form_text_01">性別<span class="red_color_text">*</span> : </span></div>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="member_gender"  id="form_radio_member_gender_male" class="form-check-input mb_left_menu_form_element" type="radio">
+              <label class="form-check-label form_radio_font_size" for=""> 男 </label>
+            </div>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="member_gender"  id="form_radio_member_gender_female" class="form-check-input mb_left_menu_form_element" type="radio" checked>
+              <label class="form-check-label form_radio_font_size" for=""> 女 </label>
+            </div>
+            <!-- /性別 -->
+  
+            <!-- 郵件、密碼、電話、地址等 -->
+            <br>
+            <span class="mb_form_text_01">電子郵件<span class="red_color_text">*</span> : </span>
+            <input name="member_email" id="form_text_member_email" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">網頁密碼<span class="red_color_text">*</span> : </span>
+            <input name="member_password" id="form_text_member_password" type="password" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">錢包密碼<span class="red_color_text">*</span> : </span>
+            <input name="member_wallet_password" id="form_text_member_wallet_password" type="password" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">行動電話<span class="red_color_text">*</span> : </span>
+            <input name="member_mobile_phone" id="form_number_member_mobile_phone" type="number" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">戶籍地址<span class="red_color_text">*</span> : </span>
+            <input name="member_residence_area_code" id="form_text_place_of_residence_area_code" type="text" class="form-control mb_left_menu_form_element" placeholder="區號">
+            <input name="member_residence_address" id="form_text_place_of_residence_address" type="text" class="form-control mb_left_menu_form_element" placeholder="請填寫真實地址">
+            <br>
+  
+            <span class="mb_form_text_01">通訊地址<span class="red_color_text">*</span> : </span>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="same_member_contact_address" id="form_radio_same_member_contact_address" class="form-check-input mb_left_menu_form_element" type="radio">
+              <label class="form-check-label form_radio_font_size" for=""> 同戶籍地址 </label>
+            </div>
+            <input name="member_contact_area_code" id="form_number_member_contact_area_code" type="number" class="form-control mb_left_menu_form_element" placeholder="區號">
+            <input name="member_contact_address" id="form_text_member_contact_address" type="text" class="form-control mb_left_menu_form_element" placeholder="請填寫真實地址">
+  
+            <br>
+            <span class="mb_form_text_01">送貨地址<span class="red_color_text">*</span> : </span>
+            <div class="form-check mb-4 display_inline_block">
+              <input name="same_member_contact_address" id="form_radio_same_member_contact_address" class="form-check-input mb_left_menu_form_element" type="radio">
+              <label class="form-check-label form_radio_font_size" for=""> 同通訊地址 </label>
+            </div>
+            <input name="" id="form_number_member_logistics_area_code" type="number" class="form-control mb_left_menu_form_element" placeholder="區號">
+            <input id="form_text_member_logistics_address" type="text" class="form-control mb_left_menu_form_element" placeholder="請填寫真實地址">
+            <!-- /郵件、密碼、電話、地址等 -->
+        <!-- /個人資料 -->
+  
+            <!-- 收貨人資料 -->
+            <br>
+            <br>
+            <div class="mb_form_text_title_02 breadcrumb_under_divider">收貨人資料</div>
+            
+            <br>
+            <span class="mb_form_text_01">收貨人姓名<span class="red_color_text">*</span> : </span>
+            <input name="member_receive_good_name" id="form_text_member_receive_good_name" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">收貨人電話<span class="red_color_text">*</span> : </span>
+            <input name="member_receive_good_phone" id="form_text_member_receive_good_phone" type="number" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">收貨人地址<span class="red_color_text">*</span> : </span>
+            <input name="member_receive_good_address" id="form_text_member_receive_good_address" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+            <!-- /收貨人資料 -->
+  
+            <!-- 推薦人資料 -->
+            <br>
+            <br>
+            <div class="mb_form_text_title_02 breadcrumb_under_divider">推薦人資料</div>
+            
+            <br>
+            <span class="mb_form_text_01">推薦人編號<span class="red_color_text">*</span> : </span>
+            <input name="member_referrer_id" id="form_text_member_referrer_id" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+            <br>
+            <span class="mb_form_text_01">推薦人姓名<span class="red_color_text">*</span> : </span>
+            <input name="member_referrer_name" id="form_text_member_referrer_name" type="number" class="form-control mb_left_menu_form_element" placeholder="">
+            <!-- /推薦人資料 -->
+  
+            <!-- 安置人資料 -->
+            <br>
+            <br>
+          <div class="mb_form_text_title_02 breadcrumb_under_divider">安置人資料</div>
+          
+          <br>
+          <span class="mb_form_text_01">安置人編號<span class="red_color_text">*</span> : </span>
+          <input name="member_arranger_id" id="form_text_member_arranger_id" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <span class="mb_form_text_01">安置人姓名<span class="red_color_text">*</span> : </span>
+          <input name="member_arranger_name" id="form_text_member_arranger_name" type="number" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <span class="mb_form_text_01">線 別<span class="red_color_text">*</span> : </span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_org_tree_type" id="form_select_member_org_tree_type" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+              <option selected>請選擇</option>
+              <option value="left">左線</option>
+              <option value="right">右線</option>
+            </select>
+          </div>
+          <div class="form-check mb-4 display_inline_block">
+            <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_left" class="form-check-input mb_left_menu_form_element" type="radio">
+            <label class="form-check-label form_radio_font_size" for=""> 推薦人極左 </label>
+          </div>
+          <div class="form-check mb-4 display_inline_block">
+            <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_right" class="form-check-input mb_left_menu_form_element" type="radio" checked>
+            <label class="form-check-label form_radio_font_size" for=""> 推薦人極右 </label>
+          </div>
+          <!-- /安置人資料 -->
+  
+          <!--會所資料 -->
+          <br>
+          <div class="mb_form_text_title_02 breadcrumb_under_divider">會所資料</div>
+          <br>
+          <br>
+          <span class="mb_form_text_01">會所編號<span class="red_color_text">*</span> : </span>
+          <input name="member_branch_id" id="form_text_member_branch_id" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <span class="mb_form_text_01">會所名稱<span class="red_color_text">*</span> : </span>
+          <input name="member_branch_name" id="form_text_member_branch_name" type="number" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <!--/會所資料 -->
+  
+          <!-- 銀行資料 -->
+          <div class="mb_form_text_title_02 breadcrumb_under_divider">銀行資料</div>
+          <span class="mb_form_text_01">銀行<span class="red_color_text">*</span></span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_nation" id="form_select_member_nation" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option value=000>選取銀行</option>
+                <option value=004>004  臺灣銀行</option>
+            </select>
+          </div>
+          <br>
+          <span class="mb_form_text_01">分行<span class="red_color_text">*</span></span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_nation" id="form_select_member_nation" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option value=004>選取分行</option>
+                <option value=004>004  臺灣銀行</option>
+            </select>
+          </div>
+          <br>
+          <span class="mb_form_text_01">銀行帳號<span class="red_color_text">*</span> : </span>
+          <input name="member_bank_name" id="form_text_member_bank_name" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <span class="mb_form_text_01">開戶人姓名<span class="red_color_text">*</span> : </span>
+          <input name="member_bank_owner_name" id="form_text_member_bank_owner_name" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <span class="mb_form_text_01">開戶人證號<span class="red_color_text">*</span> : </span>
+          <input name="member_bank_owner_id" id="form_text_member_bank_owner_id" type="text" class="form-control mb_left_menu_form_element" placeholder="">
+          <br>
+          <!-- /銀行資料 -->
+  
+          <!-- 訂購商品 -->
+          <br>
+          <div class="mb_form_text_title_02 breadcrumb_under_divider">訂購商品</div>
+          <span class="mb_form_text_01">入會費 : 1,200 元</span>
+          <br>
+          <span class="mb_form_text_01">套組級別</span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_product_level" id="form_select_member_product_level" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option value=00>請選擇</option>
+            </select>
+          </div>
+          <br>
+          <span class="mb_form_text_01">套組</span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_product_pack" id="form_select_member_product_pack" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option value=00>請選擇</option>
+            </select>
+          </div>
+          <br>
+          <span class="mb_form_text_01">贈品</span>
+          <div class="form-select-wrapper display_inline_block">
+            <select name="member_product_giveaway" id="form_select_member_product_giveaway" class="form-select mb_left_menu_form_element signup_form_select" aria-label="Default select example">
+                <option value=00>請選擇</option>
+            </select>
+          </div>
+          <!-- /訂購商品 -->
+          
+          <!-- 付款方式 -->
+          <br>
+          <div class="mb_form_text_title_02 breadcrumb_under_divider">付款方式</div>
+          <br>
+            <div class="card shadow-none bg-soft-blue pay_way_block">
+              <div class="card-body">
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_pay_type_counter"  id="form_radio_member_pay_type_counter" class="form-check-input mb_left_menu_form_element" type="radio" checked>
+                <label class="form-check-label form_radio_font_size" for=""> 現金-臨櫃 </label>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_pay_type_transfer"  id="form_radio_member_pay_type_transfer" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 轉帳-匯款 </label>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_pay_type_counter_card"  id="form_radio_member_pay_type_counter_card" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-臨櫃 </label>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <hr class="my-8 breadcrumb_under_divider_thin_white" />
+              <br>
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_pay_type_online_card"  id="member_pay_type_online_card" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-線上 </label>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_pay_type_card_3_time"  id="form_radio_member_pay_type_card_3_time" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-分期(3期) </label>
+              </div>
+              &nbsp;&nbsp;
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_left" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-分期(6期) </label>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <hr class="my-8 breadcrumb_under_divider_thin_white" />
+              <br>
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_left" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-分期(12期) </label>
+              </div>
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_left" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-分期(18期) </label>
+              </div>
+              <div class="form-check mb-4 display_inline_block">
+                <input name="member_referrer_left_or_right"  id="form_radio_member_referrer_left" class="form-check-input mb_left_menu_form_element" type="radio">
+                <label class="form-check-label form_radio_font_size" for=""> 刷卡-分期(24期) </label>
+              </div>
+            </div>
+          </div>
+        <br>
+        <br>
+          <!-- /付款方式 -->
+        <span class="mb_form_text_01">電子發票 : 會員載具</span>
+        <br>
+        <a href="#" class="btn btn-primary btn_send">確認送出</a>
+        <br>
+        <br>
+        </form>
+      </div>
+      
+      <!-- /column -->
+    </div>
+
+    
+ 
+    
+    
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+   
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <!-- /include 共用的 footer.html  -->
+  
+  <!-- include 共用的 login_pop.html  -->
+  <div w3-include-html="login_pop.html"></div> 
+  <!-- /include 共用的 login_pop.html  -->
+  
+  <!-- include 共用的 signup_pop.html  -->
+  <div w3-include-html="signup_pop.html"></div> 
+  <!-- /include 共用的 signup_pop.html  -->
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+
+
+  <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <!-- /JS 引用區 -->
+
+  <!-- 呼叫 includeHTML()  -->
+  <script>
+    includeHTML();
+  </script>
+  <!-- /呼叫 includeHTML()  -->
+  
+</body>
+
+</html>

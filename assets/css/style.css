@@ -40346,6 +40346,8 @@ footer h4{
 }
 
 /***************公用*****************/
+
+
 .mb_main_menu_nav_div{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -40369,7 +40371,7 @@ footer h4{
 }
 @media (max-width : 768px){
   #top_nav_area .logo-dark{
-    width: 15rem;
+    width: 13rem;
     margin-top: -1rem;
    }
 }
@@ -40380,7 +40382,7 @@ footer h4{
 }
 @media (max-width : 768px){
   #top_nav_area .logo-light{
-    width: 15rem;
+    width: 13rem;
     margin-top: -1rem;
    }
 }
@@ -40389,12 +40391,22 @@ footer h4{
 .top_right_msg_area a{
   padding-top: 0.5rem;
   padding-bottom: 0rem;
-  /* margin-right: 2rem; */
+  padding-left: 0.2rem;
+  margin-right: 1.4rem;
+}
+@media (max-width : 768px){
+  .top_right_msg_area a{
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 0.1rem;
+    margin-right: 1.4rem;
+  }
 }
 .menber_register_and_login_text{
   color: #225679;
   font-size: 1rem;
 }
+
 /* 主要我設計讓這個參數決定主選單水平靠右位置 */
 #top_nav_area{
  margin-right: 75%;
@@ -40411,8 +40423,16 @@ footer h4{
 
 /* 主選單 (頂端水平) 包在   <div class="row mb_main_menu_bg"> */
 .mb_main_menu_bg{
+  /* background-color: #d9d9e0; */
   background-color: #d9d9e0;
   min-height: 7rem;
+}
+@media (max-width : 768px){
+    .mb_main_menu_bg{
+    background-color: #d9d9e0;
+    min-height: 7rem;
+    
+  }
 }
 /* 主選單 () */
 .mb_main_menu_nav a{
@@ -40432,11 +40452,6 @@ footer h4{
   width: 20%;
   margin-left: 1rem;
   }
-}
-.mb_member_menu_bg{
-
-  
-  /* min-height: 7rem; */
 }
 
 

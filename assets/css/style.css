@@ -40350,7 +40350,7 @@ footer h4{
 
 /*DIY index.html 左側頂部 LOGO */
 #top_nav_area .logo-dark{
- width: 11rem;
+ width: 13rem;
  margin-top: -3rem;
 }
 @media (max-width : 768px){
@@ -40361,7 +40361,7 @@ footer h4{
 }
 
 #top_nav_area .logo-light{
-  width: 11rem ;
+  width: 13rem ;
   margin-top: -3rem;
 }
 @media (max-width : 768px){
@@ -40627,6 +40627,7 @@ footer h4{
 
 .page_block_ul .page-link{
   border-color: #225679 !important;
+  font-size: 0.6rem !important;
 }
 
 

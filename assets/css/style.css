@@ -39780,76 +39780,6 @@ height: 25rem;
   letter-spacing:0.1rem;
 }
 
-/*DIY index.html 左側頂部 LOGO */
-#top_nav_area .logo-dark{
- width: 11rem;
- margin-top: -3rem;
-}
-@media (max-width : 768px){
-  #top_nav_area .logo-dark{
-    width: 15rem;
-    margin-top: -1rem;
-   }
-}
-
-#top_nav_area .logo-light{
-  width: 11rem ;
-  margin-top: -3rem;
-}
-@media (max-width : 768px){
-  #top_nav_area .logo-light{
-    width: 15rem;
-    margin-top: -1rem;
-   }
-}
-
-/*DIY index.html 頂部導航條 */
-.top_right_msg_area a{
-  padding-top: 0.5rem;
-  padding-bottom: 0rem;
-  /* margin-right: 2rem; */
-}
-.menber_register_and_login_text{
-  color: #225679;
-}
-
-#top_nav_area{
- margin-right: 67%;
-}
-.main_menu_item_a_text{
-  padding-top: 0rem !important;
-}
-
-@media (max-width : 768px){
-  #top_nav_area{
-    margin-right: 0%;
-   }
-}
-
-
-
-.diy_hot_product_title_ch{
-  color:#438ABD;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0rem !important;;
-}
-.diy_hot_product_title_en{
-  color:#727171;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0rem !important;;
-
-}
-
-.hot_product_carousel_item a{
-  color:#727171;
-}
-
-.swiper-wrapper h4{
-  text-align: center;
-}
-
 
 /* DIY index.html 熱銷產品與最新消息分隔區 */
 #snippet-2{
@@ -39989,12 +39919,12 @@ footer h4{
 
 #index_top_wide_01{
   width: 100% !important;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 @media (max-width:768px){
   #index_top_wide_01{
     width: 100% !important;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 
@@ -40400,7 +40330,12 @@ footer h4{
 .memner_history_order_table th[scope=col]{
   background-color: #225679 !important;
   color:white;
-  padding: 0.3rem !important;
+  padding-left: 1rem !important;
+}
+.memner_history_order_table td[scope=col]{
+  background-color: #225679 !important;
+  color:white;
+  padding-left: 1rem !important;
 }
 
 .memner_history_order_table_div{
@@ -40416,7 +40351,125 @@ footer h4{
   }
 }
 
-/* 公用 */
+/***************公用*****************/
+
+
+/*DIY index.html 左側頂部 LOGO */
+#top_nav_area .logo-dark{
+ width: 11rem;
+ margin-top: -3rem;
+}
+@media (max-width : 768px){
+  #top_nav_area .logo-dark{
+    width: 15rem;
+    margin-top: -1rem;
+   }
+}
+
+#top_nav_area .logo-light{
+  width: 11rem ;
+  margin-top: -3rem;
+}
+@media (max-width : 768px){
+  #top_nav_area .logo-light{
+    width: 15rem;
+    margin-top: -1rem;
+   }
+}
+
+/*主選單(頂端水平)  */
+.top_right_msg_area a{
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  /* margin-right: 2rem; */
+}
+.menber_register_and_login_text{
+  color: #225679;
+  font-size: 1rem;
+}
+/* 主要我設計讓這個參數決定主選單水平靠右位置 */
+#top_nav_area{
+ margin-right: 60%;
+}
+.main_menu_item_a_text{
+  padding-top: 0rem !important;
+}
+
+@media (max-width : 768px){
+  #top_nav_area{
+    margin-right: 0%;
+   }
+}
+
+/* 主選單 (頂端水平) 包在   <div class="row mb_main_menu_bg"> */
+.mb_main_menu_bg{
+  background-color: #d9d9e0;
+  min-height: 7rem;
+}
+/* 主選單 () */
+.mb_main_menu_nav a{
+  font-size: 1rem !important;
+}
+.mb_main_menu_nav div{
+
+}
+
+/* 會員選單 (左側垂直)*/
+.mb_member_menu_bg_div{
+  width: 20%;
+}
+.mb_member_menu_bg{
+
+  
+  /* min-height: 7rem; */
+}
+
+
+@media (max-width:768px){
+  .mb_main_menu_bg{
+    background-color: #d9d9e0;
+    min-height: 7rem;
+  }
+}
+.mb_left_menu_block{
+  padding-top: 2rem !important;
+  width: 100%;
+}
+
+
+@media (max-width:768px){
+  .mb_left_menu_block{
+    padding-top: 2rem !important;
+    width: 100%;
+   
+  }  
+}
+
+.diy_hot_product_title_ch{
+  color:#438ABD;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;;
+}
+.diy_hot_product_title_en{
+  color:#727171;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;;
+
+}
+
+.hot_product_carousel_item a{
+  color:#727171;
+}
+
+.swiper-wrapper h4{
+  text-align: center;
+}
+
+
+
+
 .mb_form_text_01{
   color: #225679 !important;
   font-size: 1.5rem;
@@ -40484,42 +40537,7 @@ footer h4{
 .pagination-last{
   width: 3rem !important;
 }
-/* 主選單 (頂端水平)*/
-.mb_main_menu_bg{
-  background-color: #d9d9e0;
-  min-height: 7rem;
-}
 
-/* 會員選單 (左側垂直)*/
-.mb_member_menu_bg_div{
-  width: 20%;
-}
-.mb_member_menu_bg{
-
-  
-  /* min-height: 7rem; */
-}
-
-
-@media (max-width:768px){
-  .mb_main_menu_bg{
-    background-color: #d9d9e0;
-    min-height: 7rem;
-  }
-}
-.mb_left_menu_block{
-  padding-top: 2rem !important;
-  width: 100%;
-}
-
-
-@media (max-width:768px){
-  .mb_left_menu_block{
-    padding-top: 2rem !important;
-    width: 100%;
-   
-  }  
-}
 
 .mb_left_menu_form_element{
   /* width: 30%; */

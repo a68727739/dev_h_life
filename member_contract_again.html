@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="夢想是對自己的承諾，實現夢想是休斯對您的承諾, 休斯國際生活事業有限公司">
+  <meta name="keywords"
+    content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="休斯國際生活">
+  <title>購買續約</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+<body>
+
+ <!-- include 共用的 main_menu.html  -->
+ <div class="row mb_main_menu_bg">
+  <div w3-include-html="main_menu.html"></div> 
+ </div>
+ <!-- /include 共用的 main_menu.html  -->
+
+ <div class="container">
+  
+    <div class="row">
+      <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+        <!-- include 共用的 main_menu.html  -->
+        <div class="row mb_member_menu_bg ">
+          <div w3-include-html="member_left_menu_block.html" class=""></div> 
+        </div>
+        <!-- /include 共用的 main_menu.html  -->
+      </div>
+      
+      <div class="col-xl-8 order-xl-2">
+        <div class="col-xl-10 order-xl-2 signup_form_area">
+          
+              <br>
+              <div class="col-md-12 col-xl-12 pe-xl-20">
+                <h2 class="display-12 mb-12 breadcrumb_title">購 買 續 約</h2>
+                <!-- Simple -->
+                <hr class="my-8 breadcrumb_under_divider_thin" />
+              </div>
+              <br>   
+
+              <div class="mb_form_text_title_02 breadcrumb_under_divider">會員資料</div>
+                <br>
+                <div class="card shadow-none bg-soft-blue">
+                  <div class="card-body card_body_diy">
+                    <span class="mb_form_text_01">會員編號 : TW000000</span>
+                    <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                    <span class="mb_form_text_01">姓名 : 王曉明</span>
+                    <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                    
+                  
+                    <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                    <span class="mb_form_text_01">收件人 : <span class="mb_form_text_red_01">*</span></span>
+                      <input name="member_profile_email" id="form_text_member_profile_email" type="text" class="form-control mb_left_menu_form_element" placeholder="alen11223@gmail.com" disabled>
+                    
+                    <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                  
+                    <span class="mb_form_text_01">收件人電話 : <span class="mb_form_text_red_01">*</span></span>
+                      <input name="member_profile_mobile_phone" id="form_text_member_profile_mobile_phone" type="text" class="form-control mb_left_menu_form_element" placeholder="0912345678" disabled>
+                    
+                    <hr class="my-8 breadcrumb_under_divider_thin_white" />
+                    
+                    <br>
+                
+                    <span class="mb_form_text_01">通訊地址 : </span>
+                    <input name="member_profile_contact_address_area_code" id="form_text_member_profile_contact_address_area_code" type="text" class="form-control mb_left_menu_form_element" placeholder="105" disabled>
+                    <input name="member_profile_contact_address_district" id="form_text_member_profile_contact_address_district" type="text" class="form-control mb_left_menu_form_element" placeholder="台北市松山區" disabled>
+                    <input name="member_profile_contact_address" id="form_text_member_profile_contact_address" type="text" class="form-control mb_left_menu_form_element" placeholder="光復南路1號5F-1" disabled>
+                    
+                  </div>
+                </div>
+
+              
+              
+                <section class="wrapper">
+                  <div class="container py-14 py-md-16 memner_profile_button_area">
+                    
+                    <div class="row gx-md-8 gx-xl-12 gy-10">
+                      <div class="col-lg-6 mx-auto">
+                        <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">返 回</a>
+                      </div>
+                      <!--/column -->
+                      <div class="col-lg-6 mx-auto">
+                        <a href="#" class="btn btn-primary btn-icon btn-icon-end mt-2 member_profile_btn">確認送出</a>
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.container -->
+                </section>
+                <!-- /section -->
+                
+        </div>
+        <br>
+        <br>
+      
+      </div>
+    </div>
+    <!-- /column -->
+
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+   
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <!-- /include 共用的 footer.html  -->
+  
+  <!-- include 共用的 login_pop.html  -->
+  <div w3-include-html="login_pop.html"></div> 
+  <!-- /include 共用的 login_pop.html  -->
+  
+  <!-- include 共用的 signup_pop.html  -->
+  <div w3-include-html="signup_pop.html"></div> 
+  <!-- /include 共用的 signup_pop.html  -->
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+
+
+  <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <!-- /JS 引用區 -->
+
+  <!-- 呼叫 includeHTML()  -->
+  <script>
+    includeHTML();
+  </script>
+  <!-- /呼叫 includeHTML()  -->
+  
+</body>
+
+</html>

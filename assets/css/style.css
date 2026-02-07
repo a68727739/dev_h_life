@@ -40346,7 +40346,18 @@ footer h4{
 }
 
 /***************公用*****************/
+.signup_form_area{
+  width: 150% !important;
+}
+  @media (max-width:768px){
+    .signup_form_area{
+    width: 100% !important;
+  }
+}
 
+.signup_form_area input{
+  font-size: 1.3rem !important;
+}
 
 .mb_main_menu_nav_div{
   margin-left: 2rem;

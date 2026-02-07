@@ -40346,6 +40346,10 @@ footer h4{
 }
 
 /***************公用*****************/
+.diy_card_body{
+  padding: 0.1rem !important;
+}
+
 .signup_form_area{
   width: 150% !important;
 }
@@ -40357,6 +40361,7 @@ footer h4{
 
 .signup_form_area input{
   font-size: 1.3rem !important;
+
 }
 
 .mb_main_menu_nav_div{
@@ -40589,6 +40594,7 @@ footer h4{
 
 .display_inline_block{
   display: inline-block !important;
+  height: 1rem !important;
 }
 
 .div_in_one_row{
@@ -40637,24 +40643,24 @@ footer h4{
 /* member_forget_password */
 #form_text_member_login_account
 {
-  width: 15rem !important;
+  width: 20rem !important;
 }
 
 
 /* member_profile */
 #form_text_member_profile_contact_address_area_code
 {
-  width: 4rem !important;
+  width: 4.2rem !important;
 }
 
 #form_text_member_profile_contact_address_district
 {
-  width: 8rem !important;
+  width: 10rem !important;
 }
 
 #form_text_member_profile_contact_address
 {
-  width: 15rem !important;
+  width: 17rem !important;
 }
 
 .memner_profile_button_area{

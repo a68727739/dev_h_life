@@ -40346,7 +40346,21 @@ footer h4{
 }
 
 /***************公用*****************/
+.mb_main_menu_nav_div{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
+
+[class^=uil-],
+[class*=" uil-"] {
+  font-family: "Unicons" !important;
+  font-size: 1.2rem !important;
+}
+
+.diy_badge-cart{
+  font-size: 1rem !important;
+}
 
 /*DIY index.html 左側頂部 LOGO */
 #top_nav_area .logo-dark{
@@ -40383,7 +40397,7 @@ footer h4{
 }
 /* 主要我設計讓這個參數決定主選單水平靠右位置 */
 #top_nav_area{
- margin-right: 60%;
+ margin-right: 75%;
 }
 .main_menu_item_a_text{
   padding-top: 0rem !important;
@@ -40411,6 +40425,13 @@ footer h4{
 /* 會員選單 (左側垂直)*/
 .mb_member_menu_bg_div{
   width: 20%;
+  margin-left: -10rem;
+}
+@media (max-width:768px){
+  .mb_member_menu_bg_div{
+  width: 20%;
+  margin-left: 1rem;
+  }
 }
 .mb_member_menu_bg{
 
@@ -40438,6 +40459,8 @@ footer h4{
    
   }  
 }
+
+
 
 .diy_hot_product_title_ch{
   color:#438ABD;

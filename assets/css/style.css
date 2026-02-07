@@ -40351,7 +40351,7 @@ footer h4{
 }
 
 .signup_form_area{
-  width: 150% !important;
+  width: 160% !important;
 }
   @media (max-width:768px){
     .signup_form_area{
@@ -40572,7 +40572,7 @@ footer h4{
   margin-bottom: 0rem !important; 
   margin-top: 0.5rem !important; 
   padding-left: 0.5rem;
-  width: 12rem;
+  width: 14rem;
   font-size: 2rem ;
 }
 
@@ -40672,6 +40672,14 @@ footer h4{
 .memner_download_table th[scope=col]{
   background-color: #225679 !important;
   color:white;
+  width: 3rem !important;
+  font-size: 1rem !important;
+}
+
+.memner_download_table td{
+
+  width: 3rem !important;
+  font-size: 1rem !important;
 }
 
 .page-link.active, .active>.page_item_now
@@ -40699,5 +40707,62 @@ footer h4{
   font-size: 1rem !important;
 }
 
+/* 獎金明細 member_bonus_detail.html */
+.memner_download_table th[scope=last_row_th]{
+  background-color: #5f658f !important;
+  color:white;
+  width: 3rem !important;
+}
+.memner_download_table td[scope=last_row_td]{
+  background-color: #5f658f !important;
+  color:white;
+  width: 3rem !important;
+}
+
+/* 組樹狀圖 */
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
 
 
+.tree_color_01{
+  color: #f6c68c !important;
+}
+.diy_tree{
+  font-size: 1.2rem !important;
+}

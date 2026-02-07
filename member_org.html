@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="夢想是對自己的承諾，實現夢想是休斯對您的承諾, 休斯國際生活事業有限公司">
+  <meta name="keywords"
+    content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="休斯國際生活">
+  <title>組織查詢</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+<body>
+
+ <!-- include 共用的 main_menu.html  -->
+ <div class="row mb_main_menu_bg">
+  <div w3-include-html="main_menu.html"></div> 
+ </div>
+ <!-- /include 共用的 main_menu.html  -->
+
+ <div class="container">
+  
+  <div class="row">
+
+    <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+        <!-- include 共用的 main_menu.html  -->
+        <div class="row mb_member_menu_bg ">
+          <div w3-include-html="member_left_menu_block.html" class=""></div> 
+        </div>
+        <!-- /include 共用的 main_menu.html  -->
+    </div>
+    <div class="col-xl-8 order-xl-2">
+      <div class="col-xl-10 order-xl-2 signup_form_area">
+            <br>
+            <div class="col-md-12 col-xl-12 pe-xl-20">
+              <h2 class="display-12 mb-12 breadcrumb_title">組 織 查 詢</h2>
+              <!-- Simple -->
+              <hr class="my-8 breadcrumb_under_divider_thin" />
+            </div>
+            <br>   
+            <a href="#" class="btn btn-outline-primary rounded-pill member_profile_btn_outline">直推組織</a>
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">直推樹狀圖</a>
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">安置組織</a>
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">安置樹狀圖</a>
+            <br>
+            <br>
+            <span class="mb_form_text_02">請點擊 + 號 ， 以開啟推薦組織表；或點擊 - 號，縮小推薦組織表： </span>
+            <br>
+            
+
+            <!-- 組織樹狀圖 -->
+             <ul id="myUL" class="diy_tree">
+              <li>
+                <span class="caret">
+                  <span class="tree_color_01">0代~></span>TW123456 王曉明1 
+                  <span class="tree_color_01">入會日期 : 2025-04-26 職級 : H3 聘階 : 一星鑽石 重消合格日期 : 2026-10-18</span>
+                </span>
+                <ul class="nested">
+                  <li>
+                    <span class="caret">
+                        <span class="tree_color_01">1代~></span>TW1482031 李X華1 
+                        <span class="tree_color_01">入會日期 : 2025-04-28 職級 : H3 聘階 : 會員 重消合格日期 : 2026-8-18</span>
+                    </span>
+                    <ul class="nested">
+                      <li>Black Tea</li>
+                      <li>White Tea</li>
+                      <li><span class="caret">Green Tea</span>
+                        <ul class="nested">
+                          <li>Sencha</li>
+                          <li>Gyokuro</li>
+                          <li>Matcha</li>
+                          <li>Pi Lo Chun</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    
+                  </li>
+
+                  <li>
+                    <span class="caret">
+                        <span class="tree_color_01">1代~></span>TW1482031 蔡X美1
+                        <span class="tree_color_01">入會日期 : 2025-05-26 職級 : H3 聘階 : 二星鑽石 重消合格日期 : 2026-3-28</span>
+                    </span>
+                    <ul class="nested">
+                      <li>
+                        <span class="tree_color_01">1代~></span>TW1482031 楊X全1
+                        <span class="tree_color_01">入會日期 : 2025-08-26 職級 : H3 聘階 : 二星鑽石 重消合格日期 : 2026-7-25</span>
+                      </li>
+                      
+                    </ul>
+
+                    
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <!-- /組織樹狀圖 -->
+              
+        </div>
+        <br>
+        <br>
+  
+    </div>
+  </div>
+    
+    <!-- /column -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+   
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <!-- /include 共用的 footer.html  -->
+  
+  <!-- include 共用的 login_pop.html  -->
+  <div w3-include-html="login_pop.html"></div> 
+  <!-- /include 共用的 login_pop.html  -->
+  
+  <!-- include 共用的 signup_pop.html  -->
+  <div w3-include-html="signup_pop.html"></div> 
+  <!-- /include 共用的 signup_pop.html  -->
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+
+
+  <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <!-- /JS 引用區 -->
+
+  <!-- 呼叫 includeHTML()  -->
+  <script>
+    includeHTML();
+  </script>
+  <!-- /呼叫 includeHTML()  -->
+  
+</body>
+
+</html>

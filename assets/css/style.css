@@ -39901,16 +39901,11 @@ footer h4{
   }
 }
 
-
 @media (max-width:768px){
   #footer_contacts_area{
     width:100%;
   }
 }
-
-
-
-
 
 /* DIY index.html 最底部 */
 #hot_product_area{
@@ -39927,7 +39922,6 @@ footer h4{
     margin-top: 0rem;
   }
 }
-
 
 .diy_brand_value_content_img{
   padding: 0rem;

@@ -40118,6 +40118,9 @@ footer h4{
 .contact_us_title{
   color: #225679 !important; 
 }
+.contact_us_div{
+  padding-top: 0rem !important;
+}
 
 .contact_us_div p{
   font-size: 1.2rem !important;
@@ -40433,6 +40436,14 @@ footer h4{
   color: #225679;
   font-size: 1rem;
 }
+@media (max-width : 768px){
+  .menber_register_and_login_text{
+  color: #225679;
+  font-size: 0.8rem;
+  }
+
+}
+
 
 /* 主要我設計讓這個參數決定主選單水平靠右位置 */
 #top_nav_area{

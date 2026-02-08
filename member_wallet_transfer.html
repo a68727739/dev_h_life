@@ -9,7 +9,7 @@
   <meta name="keywords"
     content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="休斯國際生活">
-  <title>會員登入</title>
+  <title>錢包轉出</title>
   <link rel="shortcut icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -58,63 +58,59 @@
   
   <div class="row">
 
-    
-    <div class="col-xl-12 order-xl-1">
-      <div class="col-xl-12 order-xl-2 signup_form_area">
-        <br>
-        <br>
-        <div class="card-body">
-          <div class="row g-5">
-            <div class="col-lg-5">
-              
-                <!-- 會員登入 -->
-              <br>
-              <br>
-              <div class="col-md-12 col-xl-12 pe-xl-20">
-
-                <div class="mb_form_text_title_02 breadcrumb_under_divider">會員登入</div>
-                <!-- Simple -->
-                <!-- <hr class="my-8 breadcrumb_under_divider" /> -->
-              </div>
-              
-              <br>
-              <span class="mb_form_text_01">會員編號<span class="red_color_text">*</span> : </span>
-              <input name="member_login_account" id="form_text_member_login_account" type="text" class="form-control mb_left_menu_form_element_03" placeholder="">
-              <br>
-              <span class="mb_form_text_01">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼<span class="red_color_text">*</span> : </span>
-              <input name="member_login_password" id="form_text_member_login_password" type="password" class="form-control mb_left_menu_form_element_03" placeholder="">
-              <!-- /會員登入 -->
-
-              <br>
-              
-              <br>
-              <div class="member_forget_password_button_div">  
-                <a href="member_forget_password.html"><span class="mb_form_text_02">忘記密碼</span></a>
-                <a href="#" class="btn btn-primary rounded-pill member_profile_btn">登 入</a>
-              </div>
-              
-              <br>
-              <br>
-
-            </div>
-            <!-- /column -->
-            
-            <div class="col-lg-4">
-                  <div class="card-body login_page_img_right_block">
-                    <figure class="rounded"><img src="./assets/img/photos/login_page_img_right.png" srcset="./assets/img/photos/login_page_img_right.png" alt=""></figure>
-                  </div>  
-            </div>
-            <!-- /column -->
-          </div>
-          <!-- /.row -->
+    <div class="col-xl-4 order-xl-1 mb_member_menu_bg_div">
+        <!-- include 共用的 main_menu.html  -->
+        <div class="row mb_member_menu_bg ">
+          <div w3-include-html="member_left_menu_block.html" class=""></div> 
         </div>
-
-        </div>
-        
-        <br>
-        <br>
-      </div>
+        <!-- /include 共用的 main_menu.html  -->
     </div>
+    <div class="col-xl-8 order-xl-2">
+      <div class="col-xl-10 order-xl-2 signup_form_area">
+            <br>
+            <div class="col-md-12 col-xl-12 pe-xl-20">
+              <h2 class="display-12 mb-12 breadcrumb_title">電子錢包資料</h2>
+              <!-- Simple -->
+              <hr class="my-8 breadcrumb_under_divider_thin" />
+            </div>
+            <br>   
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">錢包資料</a>
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">申請兌現</a>
+            <a href="#" class="btn btn-primary rounded-pill member_profile_btn">兌現資料</a>
+            <a href="#" class="btn btn-outline-primary rounded-pill member_profile_btn_outline">錢包轉出</a>
+            <br>
+            <br>
+            <span class="mb_form_text_01">會員編號 : TW123456</span>
+            <br>
+            <span class="mb_form_text_01">餘額 : 0.00 元</span>
+            <br>
+            <span class="mb_form_text_01">轉 出 金 額 : </span>
+            <input name="" id="" type="text" class="form-control mb_left_menu_form_element_03" placeholder="">
+            
+            <br>
+            <!-- 要轉入會員之資料 -->
+            
+            <br>
+            <br>
+            <span class="mb_form_text_01">要轉入會員之資料 </span>
+            <br>
+            <span class="mb_form_text_01">會 員 編 號 : </span>
+            <input name="" id="" type="text" class="form-control mb_left_menu_form_element_03" placeholder="">
+            <br>
+            <span class="mb_form_text_01">會 員 姓 名 : </span>
+            <input name="" id="" type="text" class="form-control mb_left_menu_form_element_03" placeholder="">
+            <br>
+            <span class="mb_form_text_01">錢 包 密 碼 : </span>
+            <input name="" id="" type="text" class="form-control mb_left_menu_form_element_03" placeholder="">
+            <!-- /要轉入會員之資料 -->
+        </div>
+        <br>
+        <a href="#" class="btn btn-primary rounded-pill member_profile_btn">確 認 轉 出</a>
+        <br>
+        <br>
+    </div>
+  </div>
+    
     <!-- /column -->
   </div>
   <!-- /.row -->

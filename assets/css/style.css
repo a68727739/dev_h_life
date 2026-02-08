@@ -40119,7 +40119,13 @@ footer h4{
   color: #225679 !important; 
 }
 
+.contact_us_div p{
+  font-size: 1.2rem !important;
+}
 
+.contact_us_div address{
+  font-size: 1.2rem !important;
+}
 
 /* 商品 */
 .price_text{
@@ -40301,7 +40307,7 @@ footer h4{
 
 /* member_login */
 .login_page_img_right_block{
-  width: 100% !important;
+  width: 80% !important;
   padding: 0rem !important;
 }
 .radio_button_from_wallet_div{

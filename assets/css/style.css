@@ -40288,6 +40288,11 @@ footer h4{
   border-color: #225679 !important;
   color: #225679 !important;
 }
+
+.member_profile_btn_outline:hover{
+  background-color: white !important;
+
+}
 /* member_download.html */
 .memner_download_table th[scope=col]{
   background-color: #225679 !important;
@@ -40530,6 +40535,7 @@ footer h4{
   font-weight:350;
 }
 
+
 .red_color_text{
   color:red !important;
 }
@@ -40589,6 +40595,11 @@ footer h4{
 
 .mb_left_menu_form_element{
   /* width: 30%; */
+  display: inline-block !important;
+}
+
+.mb_left_menu_form_element_02{
+  width: 8rem !important;
   display: inline-block !important;
 }
 
@@ -40667,8 +40678,7 @@ footer h4{
   padding-top: 0rem !important;
 }
 
-/* 底部分頁小橫條 */
-/* 當前選中的分頁藍底白字 */
+/* 表格第一row底色與其他row不同 */
 .memner_download_table th[scope=col]{
   background-color: #225679 !important;
   color:white;
@@ -40682,6 +40692,16 @@ footer h4{
   font-size: 1rem !important;
 }
 
+.memner_download_table th{
+  text-align: left;
+}
+.memner_download_table th{
+  padding-left: 0.3rem !important;
+}
+.memner_download_table td{
+  padding-left: 0.3rem !important;
+}
+
 .page-link.active, .active>.page_item_now
 {
   background-color: #225679 !important;
@@ -40690,22 +40710,32 @@ footer h4{
 
 .page_block_ul .page-link{
   border-color: #225679 !important;
-  font-size: 0.6rem !important;
-}
 
+}
+/* .page_block_ul{
+  width: 5rem !important;
+}
+.page_block_ul li{
+  width: 5rem !important;
+} */
 
 .pagination{
   --bs-pagination-disabled-color: #225679 !important;
 }
-/* 直接把原本預設的改掉 */
+
+
+/* start 直接把原本預設的改掉 */
 .page-link{
   color: #225679 !important;
   font-weight: 500 !important;
+  width: 3.5rem !important;
+  border-left-width: 1px;
+  font-size: 0.8rem !important;
 }
+/* end 直接把原本預設的改掉 */
 
-.nav_block table td, table th {
-  font-size: 1rem !important;
-}
+
+
 
 /* 獎金明細 member_bonus_detail.html */
 .memner_download_table th[scope=last_row_th]{
@@ -40713,12 +40743,17 @@ footer h4{
   color:white;
   width: 3rem !important;
 }
-.memner_download_table td[scope=last_row_td]{
-  background-color: #5f658f !important;
+
+/* 電子錢包(兌現資料) member_wallet_redeem_info.html */
+.memner_download_table th[class=td_bank_name]{
   color:white;
-  width: 3rem !important;
+  width: 6rem !important;
 }
 
+.memner_download_table th[class=td_bank_account]{
+  color:white;
+  width: 5rem !important;
+}
 /* 組樹狀圖 */
 
 ul, #myUL {

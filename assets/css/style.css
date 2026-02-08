@@ -39859,12 +39859,12 @@ footer h4{
 #footer_contacts_area{
   width:40%;
   font-size: 1.1rem;
-  margin-left:16rem;
+  margin-left:25%;
 }
 
 @media (max-width:768px){
   #footer_contacts_area{
-    width:100%;
+    width:40%;
     margin-left:0rem;
   }
   #footer_contacts_area ul li{
@@ -40447,7 +40447,7 @@ footer h4{
 
 /* 主要我設計讓這個參數決定主選單水平靠右位置 */
 #top_nav_area{
- margin-right: 75%;
+ margin-right: 70%;
 }
 .main_menu_item_a_text{
   padding-top: 0rem !important;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="夢想是對自己的承諾，實現夢想是休斯對您的承諾, 休斯國際生活事業有限公司">
+  <meta name="keywords"
+    content="休斯國際生活, Hughes International Life Science Ltd., corporate, RenoSorb ®專利技術, 簡單擁有健康新生活, 多項國際專利, 國家品質認證, 提供優質的產品, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="休斯國際生活">
+  <title>休斯國際_活泉賦能飲</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
+ <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+<!-- /共用的 html includeHTML函數部分 -->
+
+
+<body>
+  <div class="content-wrapper">
+ <!-- include 共用的 main_menu.html  -->
+ <div w3-include-html="main_menu.html"></div> 
+ <!-- /include 共用的 main_menu.html  -->
+
+  
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="row gx-md-8 gx-xl-12 gy-8">
+          <div class="col-lg-6">
+            <div class="swiper-container swiper-thumbs-container" data-margin="10" data-dots="false" data-nav="true" data-thumbs="true">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure class="rounded"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" alt="" /><a class="item-link" href="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide">
+                    <figure class="rounded"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" alt="" /><a class="item-link" href="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide">
+                    <figure class="rounded"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" alt="" /><a class="item-link" href="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide">
+                    <figure class="rounded"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" alt="" /><a class="item-link" href="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                  </div>
+                  <!--/.swiper-slide -->
+                </div>
+                <!--/.swiper-wrapper -->
+              </div>
+              <!-- /.swiper -->
+              <div class="swiper swiper-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" class="rounded" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" class="rounded" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" class="rounded" alt="" /></div>
+                  <div class="swiper-slide"><img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" class="rounded" alt="" /></div>
+                </div>
+                <!--/.swiper-wrapper -->
+              </div>
+              <!-- /.swiper -->
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /column -->
+          <div class="col-lg-6">
+            <div class="post-header mb-5">
+              <h2 class="post-title display-5"><a href="./shop-product.html" class="link-dark">NAD+_賦活新生系列_活泉賦能飲</a></h2>
+              <p class="price fs-20 mb-2"><span class="amount">NT$ 00000.00</span></p>
+              <a href="#" class="link-body ratings-wrapper"><span class="ratings five"></span><span>(999 Reviews)</span></a>
+            </div>
+            <!-- /.post-header -->
+            <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Duis mollis, est non commodo luctus. Nulla vitae elit libero pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+            <form>
+              <fieldset class="picker">
+                
+              </fieldset>
+              <fieldset class="picker">
+                
+              </fieldset>
+         
+            </form>
+            <!-- /form -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <ul class="nav nav-tabs nav-tabs-basic mt-12">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#tab1-1">XXX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab1-2">XXX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab1-3">XXX</a>
+          </li>
+        </ul>
+        <!-- /.nav-tabs -->
+        <div class="tab-content mt-0 mt-md-5">
+          <div class="tab-pane fade show active" id="tab1-1">
+            <figure class="rounded mb-6">
+                  <img src="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" srcset="./assets/img/photos/NAD+_賦活新生系列_活泉賦能飲.jpg" alt="" />
+                               
+                  <span class="avatar bg-pink text-white w-10 h-10 position-absolute text-uppercase fs-13" style="top: 1rem; left: 1rem;"><span>Sale!</span></span>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, accusamus. Reiciendis dolor quibusdam officia cum expedita perspiciatis cupiditate placeat doloribus? Est nulla sequi exercitationem non deleniti suscipit inventore labore similique.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veniam perferendis itaque suscipit earum ipsum quisquam quibusdam a nobis maiores id quaerat eos fuga quidem, deleniti repellat maxime sit hic.</p>
+          </div>
+          <!--/.tab-pane -->
+          <div class="tab-pane fade" id="tab1-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas deleniti perferendis est amet maiores similique dolores voluptates natus cumque quaerat a, aspernatur doloremque itaque accusamus corporis non delectus iste id?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas deleniti perferendis est amet maiores similique dolores voluptates natus cumque quaerat a, aspernatur doloremque itaque accusamus corporis non delectus iste id?</p>
+          </div>
+          <!--/.tab-pane -->
+          <div class="tab-pane fade" id="tab1-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsa repellendus laborum maiores aliquid in, nam eum culpa pariatur soluta! Porro rem doloremque minima, ducimus assumenda commodi consequuntur odit voluptates!</p>
+          </div>
+          <!--/.tab-pane -->
+        </div>
+        <!-- /.tab-content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+  
+
+
+    <!-- 區隔 -->
+    <section id="index_section_between_hot_product_and_footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
+            
+          
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+    </section>
+  
+    <!-- include 共用的 footer.html  -->
+    <div w3-include-html="footer.html"></div> 
+    <!-- /include 共用的 footer.html  -->
+    
+    <!-- include 共用的 login_pop.html  -->
+    <div w3-include-html="login_pop.html"></div> 
+    <!-- /include 共用的 login_pop.html  -->
+    
+    <!-- include 共用的 signup_pop.html  -->
+    <div w3-include-html="signup_pop.html"></div> 
+    <!-- /include 共用的 signup_pop.html  -->
+    
+  
+    <!-- 右側 浮動瀏覽進度球 -->
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- /右側 浮動瀏覽進度球 -->
+  
+    <!-- JS 引用區 -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!-- /JS 引用區 -->
+  
+    <!-- 呼叫 includeHTML()  -->
+    <script>
+      includeHTML();
+    </script>
+    <!-- /呼叫 includeHTML()  -->
+</body>
+
+</html>

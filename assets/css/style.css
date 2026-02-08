@@ -40729,12 +40729,14 @@ footer h4{
   color: #225679 !important;
   font-weight: 500 !important;
   width: 3.5rem !important;
-  border-left-width: 1px;
+  /* border-left-width: 0px; */
   font-size: 0.8rem !important;
 }
 /* end 直接把原本預設的改掉 */
 
-
+#nav_next_page_a{
+  border-left-width: 0rem !important;
+}
 
 
 /* 獎金明細 member_bonus_detail.html */

@@ -40031,6 +40031,9 @@ footer h4{
   margin-top: 6rem;
 }
 
+.leader_article_div{
+  margin-left: 0rem !important;
+}
 
 /* DIY advantages.html  */
 .advantages_description_img_block{
@@ -40447,8 +40450,9 @@ footer h4{
 
 /* 主要我設計讓這個參數決定主選單水平靠右位置 */
 #top_nav_area{
- margin-right: 70%;
+ margin-right: 60%;
 }
+
 .main_menu_item_a_text{
   padding-top: 0rem !important;
 }
@@ -40477,8 +40481,12 @@ footer h4{
 .mb_main_menu_nav a{
   font-size: 1rem !important;
 }
-.mb_main_menu_nav div{
+.mb_main_menu_nav{
+  margin-right: 1rem;
+}
 
+.mb_main_menu_nav_div{
+  margin-right: 10rem;
 }
 
 /* 會員選單 (左側垂直)*/
@@ -40835,4 +40843,9 @@ ul, #myUL {
 }
 .diy_tree{
   font-size: 1.2rem !important;
+}
+
+/* 產品介紹 (內容區塊) */
+.product_content_section{
+  margin-bottom: 15rem !important;
 }

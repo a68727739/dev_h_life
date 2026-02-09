@@ -48,8 +48,11 @@
 <!-- /共用的 html includeHTML函數部分 -->
 <body>
   <!-- include 共用的 main_menu.html  -->
- <div w3-include-html="main_menu.html"></div> 
- <!-- /include 共用的 main_menu.html  -->
+  <div class="row mb_main_menu_bg">
+    <div w3-include-html="main_menu.html"></div> 
+   </div>
+  <!-- /include 共用的 main_menu.html  -->
+
 
      <!--  -->
      <section class="wrapper bg-light">
@@ -109,6 +112,8 @@
 
           </div>
           <!-- /column -->
+
+
           <aside class="col-lg-3 sidebar">
             <div class="widget mt-1 shop_side_bar_div">
               <h4 class="widget-title mb-3 product_class_text">商 品 分 類</h4>
@@ -127,12 +132,12 @@
                   <hr class="product_item_text_under_border" />
                   <li><a href="#" class="link-body product_item_text">松鶴養生系列</a></li>
               </ul>
-              
             </div>
             <!-- /.widget -->
-           
           </aside>
           <!-- /column .sidebar -->
+
+
         </div>
         <!-- /.row -->
       </div>

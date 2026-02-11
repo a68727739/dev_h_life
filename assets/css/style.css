@@ -39974,6 +39974,19 @@ footer h4{
 
 
 /* DIY consultant.html  */
+.diy_consultant_slogan_title{
+  text-align: center;
+  color:#225679 !important;
+}
+.diy_consultant_slogan_text{
+  color:black !important;
+  font-size: 1.2rem !important;
+  padding-left: 9rem !important;
+  padding-right: 9rem !important;
+  margin-bottom: 1rem !important;
+}
+
+
 .diy_pro_to_future_ch{
     color:#225679;
     font-size: 1.5rem;

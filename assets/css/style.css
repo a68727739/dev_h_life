@@ -40087,9 +40087,13 @@ footer h4{
 .activities_block{
   padding: 3rem !important;
 }
+/* album_list.html */
+.album_list_item_div a{
+  color: #225679 !important;
+}
+
 
 /* news.html */
-
 .news_item_block{
   padding-top: 0rem !important;
 }
@@ -40398,6 +40402,9 @@ footer h4{
 }
 
 /*DIY index.html 左側頂部 LOGO */
+#index_slideshow_01{
+
+}
 #top_nav_area .logo-dark{
  width: 13rem;
  margin-top: -3rem;

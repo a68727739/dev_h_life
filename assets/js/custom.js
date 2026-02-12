@@ -1,42 +1,42 @@
-/* 變更頂部跑馬燈區塊圖片(依照設備寬度變化觸發變更) */
+// 舊方法 不用 目前改用 <picture> <source srcset="" >
+/* start 變更頂部跑馬燈區塊圖片(依照設備寬度變化觸發變更) */
+        // 變更圖片
+        // function changeImageSource(screen_size) {
+        //     index_slideshow_01=document.getElementById('index_slideshow_01');
+        //     index_slideshow_02=document.getElementById('index_slideshow_02');
+        //     index_slideshow_03=document.getElementById('index_slideshow_03');
+        //     index_slideshow_04=document.getElementById('index_slideshow_04');
 
-// 變更圖片
-function changeImageSource(screen_size) {
-    index_slideshow_01=document.getElementById('index_slideshow_01');
-    index_slideshow_02=document.getElementById('index_slideshow_02');
-    index_slideshow_03=document.getElementById('index_slideshow_03');
-    index_slideshow_04=document.getElementById('index_slideshow_04');
-
-    if (screen_size.matches) { 
-        if(index_slideshow_01){
-            index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/activity_01_topwide_mobile.png');");
-            index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_01.jpg');");
-            index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_02.jpg');");
-            index_slideshow_04.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_03.jpg');");
-        }
-    } else {
-        if(index_slideshow_01){
-            index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/activity_01_topwide.png');");
-            index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg7.jpg');");
-            index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg8.jpg');");
-            index_slideshow_04.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg9.jpg');");
-        }
-    }
-  }
+        //     if (screen_size.matches) { 
+        //         if(index_slideshow_01){
+        //             index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/activity_01_topwide_mobile.png');");
+        //             index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_01.jpg');");
+        //             index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_02.jpg');");
+        //             index_slideshow_04.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_03.jpg');");
+        //         }
+        //     } else {
+        //         if(index_slideshow_01){
+        //             index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/activity_01_topwide.png');");
+        //             index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg7.jpg');");
+        //             index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg8.jpg');");
+        //             index_slideshow_04.setAttribute("style", "background-image: url('./assets/img/photos/diy_bg9.jpg');");
+        //         }
+        //     }
+        //   }
   
-// 設置觸發條件
-var screen_size= window.matchMedia("screen and (max-width: 768px)");
+        // 設置觸發條件
+        // var screen_size= window.matchMedia("screen and (max-width: 768px)");
 
-console.log(screen_size)
-// 監聽事件 (change)
-screen_size.addEventListener("change", function() {
-    changeImageSource(screen_size);
-});
+        // console.log(screen_size)
+        // 監聽事件 (change)
+        // screen_size.addEventListener("change", function() {
+        //     changeImageSource(screen_size);
+        // });
 
-window.onload = () => {
-    changeImageSource(screen_size);
-}
-/*/ 變更頂部跑馬燈區塊圖片(依照設備寬度變化觸發變更) */
+        // window.onload = () => {
+        //     changeImageSource(screen_size);
+        // }
+/* end /變更頂部跑馬燈區塊圖片(依照設備寬度變化觸發變更) */
 
 
 /*組織樹狀圖*/

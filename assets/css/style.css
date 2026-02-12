@@ -39814,6 +39814,10 @@ height: 25rem;
   color:#438ABD;
 }
 
+#index_middle_img_area{
+  margin-top: 2.2rem !important;
+}
+
 
 
 
@@ -40055,10 +40059,7 @@ footer h4{
 }
 
 /* DIY leader.html  */
-#leader_top_wide{
-  width: 100% !important;
-  margin-top: 6rem;
-}
+
 
 .leader_article_div{
   margin-left: 0rem !important;
@@ -40406,6 +40407,26 @@ footer h4{
 }
 
 /***************公用*****************/
+.top_wide_diy{
+  width: 100%;
+}
+.top_wide_img{
+  width: 100% !important;
+  /* margin-top: 6rem; */
+}
+
+/* .top_wide_diy img{
+  margin-top: 0rem !important;
+} */
+
+@media (max-width:768px){
+  .top_wide_diy{
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+}
+
+
 .diy_card_body{
   padding: 0.1rem !important;
 }
@@ -40413,7 +40434,7 @@ footer h4{
 .signup_form_area{
   width: 160% !important;
 }
-  @media (max-width:768px){
+@media (max-width:768px){
     .signup_form_area{
     width: 100% !important;
   }

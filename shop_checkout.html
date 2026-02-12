@@ -59,141 +59,20 @@
   </script>
 <!-- /共用的 html includeHTML函數部分 -->
 <body>
-  <!-- include 共用的 footer.html  -->
-  <div w3-include-html="main_menu.html"></div> 
-  <!-- /include 共用的 footer.html  -->
+   <!-- include 共用的 main_menu.html  -->
+   <div class="row mb_main_menu_bg">
+    <div w3-include-html="main_menu.html"></div> 
+   </div>
+   <!-- /include 共用的 main_menu.html  -->
   
   <div class="content-wrapper">
     <header class="wrapper bg-light">
       
-      <!-- <div class="offcanvas offcanvas-end bg-light" id="offcanvas-cart" data-bs-scroll="true"> -->
-      <div class="offcanvas offcanvas-end bg-light" id="offcanvas-cart" data-bs-scroll="true">
-        <div class="offcanvas-header">
-          <h3 class="mb-0">您目前的購物車內容</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column">
-          <div class="shopping-cart">
-            <div class="shopping-cart-item d-flex justify-content-between mb-4">
-              <div class="d-flex flex-row">
-                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth1.jpg" srcset="./assets/img/photos/sth1@2x.jpg 2x" alt="" /></a></figure>
-                <div class="w-100 ms-4">
-                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10001】H3入會套組1</a></h3>
-                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
-                  <div class="form-select-wrapper">
-                    <select class="form-select form-select-sm">
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                  <!--/.form-select-wrapper -->
-                </div>
-              </div>
-              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
-            </div>
-            <!--/.shopping-cart-item -->
-            <div class="shopping-cart-item d-flex justify-content-between mb-4">
-              <div class="d-flex flex-row">
-                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth2.jpg" srcset="./assets/img/photos/sth2@2x.jpg 2x" alt="" /></a></figure>
-                <div class="w-100 ms-4">
-                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10002】H3入會套組2</a></h3>
-                  <p class="price fs-sm"><span class="amount">NT$ 118,800元</span></p>
-                  <div class="form-select-wrapper">
-                    <select class="form-select form-select-sm">
-                      <option value="1">1</option>
-                      <option value="2" selected>2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                  <!--/.form-select-wrapper -->
-                </div>
-              </div>
-              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
-            </div>
-            <!--/.shopping-cart-item -->
-            <div class="shopping-cart-item d-flex justify-content-between mb-4">
-              <div class="d-flex flex-row">
-                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth3.jpg" srcset="./assets/img/photos/sth3@2x.jpg 2x" alt="" /></a></figure>
-                <div class="w-100 ms-4">
-                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10004】H3入會套組4</a></h3>
-                  <p class="price fs-sm"><span class="amount">NT$ 59,400元</span></p>
-                  <div class="form-select-wrapper">
-                    <select class="form-select form-select-sm">
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                  <!--/.form-select-wrapper -->
-                </div>
-              </div>
-              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
-            </div>
-            <!--/.shopping-cart-item -->
+   <!-- include 共用的 offcanvas_cart.html  -->
+    <div w3-include-html="offcanvas_cart.html"></div> 
+   <!-- /include 共用的 offcanvas_cart.html  -->
 
-            <div class="shopping-cart-item d-flex justify-content-between mb-4">
-              <div class="d-flex flex-row">
-                <figure class="rounded w-17"><a href="./shop-product.html"><img src="./assets/img/photos/sth3.jpg" srcset="./assets/img/photos/sth3@2x.jpg 2x" alt="" /></a></figure>
-                <div class="w-100 ms-4">
-                  <h3 class="post-title fs-16 lh-xs mb-1"><a href="./shop-product.html" class="link-dark">【TH3-10005】H3入會套組5</a></h3>
-                  <p class="price fs-sm"><span class="amount">NT$ 178,200元</span></p>
-                  <div class="form-select-wrapper">
-                    <select class="form-select form-select-sm">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3" selected>3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                  <!--/.form-select-wrapper -->
-                </div>
-              </div>
-              <div class="ms-2"><a href="#" class="link-dark"><i class="uil uil-trash-alt"></i></a></div>
-            </div>
-            <!--/.shopping-cart-item -->
-          </div>
-          <!-- /.shopping-cart-->
-          <div class="offcanvas-footer flex-column text-center">
-            <div class="d-flex w-100 justify-content-between mb-4">
-              <span>小 計:</span>
-              <span class="h6 mb-0">NT$ 415,800元</span>
-            </div>
-            <a href="#" class="btn btn-primary btn-icon btn-icon-start rounded w-100 mb-4"><i class="uil uil-credit-card fs-18"></i> 結帳送出</a>
-            <p class="fs-14 mb-0">已超過免運標準</p>
-          </div>
-          <!-- /.offcanvas-footer-->
-        </div>
-        <!-- /.offcanvas-body -->
-      </div>
-      <!-- /.offcanvas -->
+
       <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
         <div class="container d-flex flex-row py-6">
           <form class="search-form w-100">

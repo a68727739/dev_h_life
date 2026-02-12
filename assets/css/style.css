@@ -40065,11 +40065,21 @@ footer h4{
 /* DIY exclusive.html  */
 .exclusive_description_img_block{
   height: 100%;
+  
+}
+
+.exclusive_description_img_block img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  
 }
 
 #exclusive_top_wide_area{
   margin-bottom: 1.5rem;
 }
+
+
 
 /* DIY videos.html  */
 .video_carousel{

@@ -39978,12 +39978,28 @@ footer h4{
   text-align: center;
   color:#225679 !important;
 }
+@media (max-width:768px){
+  .diy_consultant_slogan_title{
+    text-align: center;
+    color:#225679 !important;
+    font-size: 1rem;
+  }
+}
 .diy_consultant_slogan_text{
   color:black !important;
   font-size: 1.2rem !important;
   padding-left: 9rem !important;
   padding-right: 9rem !important;
   margin-bottom: 1rem !important;
+}
+@media (max-width:768px){
+  .diy_consultant_slogan_text{
+    color:black !important;
+    font-size: 1.2rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin-bottom: 1rem !important;
+  }
 }
 
 

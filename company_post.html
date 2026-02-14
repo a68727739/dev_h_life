@@ -66,21 +66,24 @@
  <div w3-include-html="offcanvas_cart.html"></div> 
  <!-- /include 共用的 offcanvas_cart.html  -->
   
- <!-- include 共用的 main_menu.html  -->
- <div w3-include-html="main_menu.html"></div> 
- <!-- /include 共用的 main_menu.html  -->
-
+<!-- include 共用的 main_menu.html  -->
+  <div class="row mb_main_menu_bg">
+    <div w3-include-html="main_menu.html"></div> 
+   </div>
+   <!-- /include 共用的 main_menu.html  -->
   
 
    <!--  -->
    <section class="wrapper bg-light">
     <div class="container">
       <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-        
-        <div class="col-lg-12 order-lg-2 diy_brand_value_content_img">
-          <img class="w-auto" id="leader_top_wide" src="./assets/img/photos/news_top_wide.png" srcset="./assets/img/photos/news_top_wide.png" alt="">
-        </div>
-       
+
+        <picture>
+            <source srcset="./assets/img/photos/news_top_wide_mobile.png" media="(max-width: 768px)">
+            <source srcset="./assets/img/photos/news_top_wide.png">
+            <img src="./assets/img/photos/news_top_wide.png" class="w-auto top_wide_img">
+        </picture>
+
       </div>
       <!--/.row -->
 
@@ -287,19 +290,17 @@
   </div>
   <!-- /右側 浮動瀏覽進度球 -->
 
-
-  <!-- JS 引用區 -->
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
-  <script src="./assets/js/custom.js"></script>
-  <!-- /JS 引用區 -->
-
   <!-- 呼叫 includeHTML()  -->
   <script>
     includeHTML();
   </script>
   <!-- /呼叫 includeHTML()  -->
   
+    <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <!-- /JS 引用區 -->
 
 </body>
 

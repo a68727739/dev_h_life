@@ -44,9 +44,17 @@ var theme = {
   */
   stickyHeader: () => {
     var navbar = document.querySelector(".navbar");
+    //debug ing
+    // if (navbar == null) {
+    //   alert("navbar =null")
+    //   return
+    // };
+
     if (navbar == null) return;
     var options = {
-      offset: 350,
+      /*test ing*/ 
+      // offset: 350,
+      offset: 500,
       offsetSide: 'top',
       classes: {
         clone: 'navbar-clone fixed',

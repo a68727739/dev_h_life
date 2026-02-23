@@ -31923,9 +31923,15 @@ header {
 .navbar.navbar-light.fixed .logo-light {
   display: none;
 }
+/* DIY 主選單固定在最上方的效果 */
 .navbar.navbar-light.fixed .logo-dark {
   display: inline-block;
+  /* DIY 追加 調整下拉頁面後主選單呈現的效果微調位置   */
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
+
+
 .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
   background: var(--bs-primary);
   border-color: var(--bs-primary);

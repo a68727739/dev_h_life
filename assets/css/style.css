@@ -31963,6 +31963,8 @@ header {
   position: fixed !important;
   z-index: 1008;
   top: 0;
+  /* test ing */
+
   left: 0;
   transform: translateY(-100%);
   transition: all 300ms ease-in-out, padding-right 0ms;
@@ -31974,6 +31976,7 @@ header {
 }
 .navbar-stick {
   transform: translateY(0%);
+ 
 }
 .navbar-stick:not(.navbar-dark) {
   box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.06);
@@ -40448,6 +40451,7 @@ footer h4{
 .mb_main_menu_nav_div{
   margin-left: 2rem;
   margin-right: 2rem;
+
 }
 
 

@@ -40715,6 +40715,10 @@ footer h4{
     height: 41rem;
   }
 }
+/* 商品區 */
+.shop_side_bar_left{
+  width: 100% !important;
+}
 
 /* 加入休斯 signup.html */
 #form_text_member_name,

@@ -40534,7 +40534,8 @@ footer h4{
 .mb_main_menu_bg{
   /* background-color: #d9d9e0; */
   background-color: #d9d9e0;
-  min-height: 7rem;
+  min-height: 7rem !important;
+
 
 }
 @media (max-width : 768px){

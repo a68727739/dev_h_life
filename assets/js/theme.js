@@ -448,7 +448,9 @@ var theme = {
         allowTouchMove: sliderAllowTouchMove,
         speed: parseInt(sliderSpeed),
         slidesPerView: slidesPerViewInit,
-        loop: sliderLoop,
+        //loop: sliderLoop,
+        //DIY slide橫幅圖片改為循環播放
+        loop: true,
         centeredSlides: sliderCentered,
         spaceBetween: Number(sliderMargin),
         effect: sliderEffect,

@@ -45,10 +45,10 @@ var theme = {
   stickyHeader: () => {
     var navbar = document.querySelector(".navbar");
     //debug ing
-    if (navbar == null) {
-      alert("navbar =null")
-      return
-    };
+    // if (navbar == null) {
+    //   alert("navbar =null")
+    //   return
+    // };
 
     if (navbar == null) return;
     var options = {

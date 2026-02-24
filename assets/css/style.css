@@ -40403,15 +40403,15 @@ footer h4{
 }
 
 .memner_history_order_table_div{
-  width: 200% !important ;
-  font-size: 1rem !important;
+  width: 100% !important ;
+  font-size: 1.3rem !important;
 }
 @media (max-width:768px){
   .memner_history_order_table_div{
-    width: 4rem !important ;
+    width: 1rem !important ;
   }
   table td, table th {
-    font-size: 0.5rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -40935,4 +40935,30 @@ ul, #myUL {
 /* 產品介紹 (內容區塊) */
 .product_content_section{
   margin-bottom: 15rem !important;
+}
+
+/* 結帳頁面 價格明細 */
+.checkout_price_table tr td{
+  font-size: 1rem !important;
+}
+
+.checkout_lable_text{
+  font-size: 1rem !important;
+}
+
+.under_small_text{
+  font-size: 1rem !important;
+}
+.checkout_price{
+  font-size: 1rem !important;
+}
+/* 歷史訂單 下方分頁表的 div 區域 */
+.pagination_block_div{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 電子錢包資料 */
+.wallet_info_div a,.org_info_div a{
+  margin: 0.2rem !important;
 }

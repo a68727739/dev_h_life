@@ -39893,7 +39893,7 @@ footer h4{
 }
 @media (max-width:768px){
   .footer_area_container_big_title{
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: #225679;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -40416,6 +40416,11 @@ footer h4{
 }
 
 /***************公用*****************/
+.footer_link{
+  color:#727171 !important;
+}
+
+
 .top_wide_diy{
   width: 100%;
 }

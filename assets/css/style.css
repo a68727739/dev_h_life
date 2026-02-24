@@ -40128,9 +40128,9 @@ footer h4{
 
 
 /* DIY activities.html */
-.activity_title{
+.activity_title a{
   font-size: 1.5rem;
-  color: #225679;
+  color: #225679 !important;
 }
 
 .activities_block{

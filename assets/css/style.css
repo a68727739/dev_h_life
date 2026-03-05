@@ -40952,6 +40952,13 @@ ul, #myUL {
 .checkout_price{
   font-size: 1rem !important;
 }
+
+/* 結帳頁面 shop_state.html*/
+.hint_text{
+  font-size: 1rem !important;
+}
+
+
 /* 歷史訂單 下方分頁表的 div 區域 */
 .pagination_block_div{
   display: flex;

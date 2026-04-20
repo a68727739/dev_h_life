@@ -40548,7 +40548,7 @@ footer h4{
 /* 補充 給小尺寸筆電螢幕大小寬度使用(避免   水平上方選單    超出畫面) */
 @media screen and (min-width: 1200px) and (max-width: 1600px){
   #top_nav_area{
-    margin-right: 35%;
+    margin-right: 20%;
    }
 }
 
@@ -40594,7 +40594,7 @@ footer h4{
 @media screen and (min-width: 1200px) and (max-width: 1600px){
   .mb_member_menu_bg_div{
     width: 20%;
-    margin-left: 2.8rem;
+    margin-left: 0.1rem;
     }
 }
 

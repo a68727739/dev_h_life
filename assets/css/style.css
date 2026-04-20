@@ -40545,6 +40545,13 @@ footer h4{
    }
 }
 
+/* 補充 給小尺寸筆電螢幕大小寬度使用(避免   水平上方選單    超出畫面) */
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+  #top_nav_area{
+    margin-right: 35%;
+   }
+}
+
 /* 主選單 (頂端水平) 包在   <div class="row mb_main_menu_bg"> */
 .mb_main_menu_bg{
   /* background-color: #d9d9e0; */
@@ -40582,6 +40589,13 @@ footer h4{
   width: 20%;
   margin-left: 1rem;
   }
+}
+/* 補充 給小尺寸筆電螢幕大小寬度使用(避免    左側垂直選單    超出畫面) */
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+  .mb_member_menu_bg_div{
+    width: 20%;
+    margin-left: 2.8rem;
+    }
 }
 
 

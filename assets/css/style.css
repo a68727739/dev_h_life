@@ -39836,8 +39836,12 @@ height: 25rem;
 .footer_area_container{
   padding-bottom: 1rem !important;
 }
+
+/*  */
 .footer_area{
-  background-color: #CFDAEC;
+  /* background-color: #CFDAEC; */
+   /* 修改 footer 背景顏色 調淡一點 目的是讓LOGO的最中心的小圓圈能比較明顯 */
+  background-color: #f2f2f7;
   
 }
 .footer_area img{
@@ -40555,18 +40559,28 @@ footer h4{
 /* 主選單 (頂端水平) 包在   <div class="row mb_main_menu_bg"> */
 .mb_main_menu_bg{
   /* background-color: #d9d9e0; */
-  background-color: #d9d9e0;
+  /* 修改main_menu.html  最上方主選單的背景顏色 調淡一點 目的是讓LOGO的最中心的小圓圈能比較明顯 */
+  /* background-color: #f2f2f7; */
+  background-color: #f2f2f7;
   min-height: 7rem !important;
-
-
 }
 @media (max-width : 768px){
     .mb_main_menu_bg{
-    background-color: #d9d9e0;
+    /* background-color: #d9d9e0; */
+    /* 修改main_menu.html  最上方主選單的背景顏色 調淡一點 目的是讓LOGO的最中心的小圓圈能比較明顯 */
+    background-color: #f2f2f7;
     min-height: 7rem;
     
   }
 }
+
+
+/* 調整主選單右側小驚嘆號的顏色  跟 主選單文字顏色一致 */
+.uil-info-circle:before{
+  color:#225679;
+}
+
+
 /* 主選單 () */
 .mb_main_menu_nav a{
   font-size: 1rem !important;
@@ -40599,12 +40613,7 @@ footer h4{
 }
 
 
-@media (max-width:768px){
-  .mb_main_menu_bg{
-    background-color: #d9d9e0;
-    min-height: 7rem;
-  }
-}
+
 .mb_left_menu_block{
   padding-top: 2rem !important;
   width: 100%;
@@ -40982,4 +40991,9 @@ ul, #myUL {
 /* 電子錢包資料 */
 .wallet_info_div a,.org_info_div a{
   margin: 0.2rem !important;
+}
+
+/* 首頁熱銷商品區中的滾動區商品價格 與 商品介紹頁面價格部分(阿拉伯數字部分改為紅色) */
+.price_number{
+  color:red;
 }

@@ -39850,14 +39850,25 @@ height: 25rem;
 
 
 #index_section_between_hot_product_and_footer{
-  margin-top: 5rem;
+  /* 調整底部 讓空白(高度)少一點 */
+  margin-top: -4rem;
 }
 @media (max-width:768px){
   #index_section_between_hot_product_and_footer{
-    margin-top: -18rem;
+    /* 調整底部 讓空白(高度)少一點 */
+    margin-top: -5rem;
 
   }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+   #index_section_between_hot_product_and_footer{
+    /* 調整底部 讓空白(高度)少一點 */
+    margin-top: -6rem;
+
+  }
+} 
+
 
 footer li a{
   color:#727171 !important;
@@ -40957,7 +40968,8 @@ ul, #myUL {
 
 /* 產品介紹 (內容區塊) */
 .product_content_section{
-  margin-bottom: 15rem !important;
+  /* 調整底部 讓空白(高度)少一點 */
+  margin-bottom: -2rem !important;
 }
 
 /* 結帳頁面 價格明細 */
@@ -40997,3 +41009,4 @@ ul, #myUL {
 .price_number{
   color:red;
 }
+

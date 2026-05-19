@@ -39851,12 +39851,12 @@ height: 25rem;
 
 #index_section_between_hot_product_and_footer{
   /* 調整底部 讓空白(高度)少一點 */
-  margin-top: -4rem;
+  margin-top: -8rem;
 }
 @media (max-width:768px){
   #index_section_between_hot_product_and_footer{
     /* 調整底部 讓空白(高度)少一點 */
-    margin-top: -5rem;
+    margin-top: -4.5rem;
 
   }
 }
@@ -39864,7 +39864,7 @@ height: 25rem;
 @media screen and (min-width: 1200px) and (max-width: 1600px){
    #index_section_between_hot_product_and_footer{
     /* 調整底部 讓空白(高度)少一點 */
-    margin-top: -6rem;
+    margin-top: -7rem;
 
   }
 } 
